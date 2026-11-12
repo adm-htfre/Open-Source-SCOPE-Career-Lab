@@ -17,11 +17,14 @@ import {
   pathIds,
   pathKey,
   routeTo,
+  shortTitle,
   type LaidNode,
+  type MindShape,
   type MindMapModel,
   type MindNode,
 } from "@/lib/v2/mind-map";
 import type { V2NodeType } from "@/lib/v2/types";
+import { NodeIcon } from "./icons";
 import { MARATHI_TITLES, STRINGS, TYPE_LABELS, type Lang } from "./strings";
 
 type View = { cx: number; cy: number; k: number };
@@ -46,7 +49,7 @@ const MAX_ZOOM = 2;
 const LANG_KEY = "career-tree-mindmap-lang";
 const LANG_EVENT = "career-tree-mindmap-lang";
 const NARROW_QUERY = "(max-width: 760px)";
-/** Below this width the map opens to the right only, clear of the header. */
+/** Below this width the map starts a little smaller, clear of the header. */
 const COMPACT_QUERY = "(max-width: 1279px)";
 
 const clampZoom = (k: number) => Math.min(MAX_ZOOM, Math.max(MIN_ZOOM, k));
@@ -106,31 +109,30 @@ export default function MindMapView({ model }: { model: MindMapModel }) {
     () => window.matchMedia(COMPACT_QUERY).matches,
     () => false,
   );
-  const sides: 1 | 2 = compact ? 1 : 2;
+  const shape: MindShape = narrow ? "tall" : "wide";
   const t = STRINGS[lang];
 
   const [expanded, setExpanded] = useState<ReadonlySet<string>>(() => new Set());
   const [selected, setSelected] = useState<string | null>(null);
-  const [keepOpen, setKeepOpen] = useState(false);
   const [view, setView] = useState<View | null>(null);
   const [gliding, setGliding] = useState(true);
   const [query, setQuery] = useState("");
 
+  // Nudge the map right and down a little so it clears the header card.
   const homeView = useMemo<View>(
     () =>
       narrow
-        ? { cx: MIND_SIZES.root.width / 2 + MIND_SIZES.gapX, cy: 0, k: 0.78 }
-        : // Two-sided: nudge the map right so the left branches clear the header.
-          compact
-          ? { cx: 0, cy: 0, k: 0.85 }
-          : { cx: -130, cy: 0, k: 1 },
+        ? { cx: 0, cy: 0, k: 0.74 }
+        : compact
+          ? { cx: -165, cy: -15, k: 0.78 }
+          : { cx: -60, cy: 0, k: 1 },
     [narrow, compact],
   );
   const current = view ?? homeView;
 
   const layout = useMemo(
-    () => layoutMindMap(byId, rootId, expanded, sides),
-    [byId, rootId, expanded, sides],
+    () => layoutMindMap(byId, rootId, expanded, shape),
+    [byId, rootId, expanded, shape],
   );
 
   const num = useCallback(
@@ -144,23 +146,26 @@ export default function MindMapView({ model }: { model: MindMapModel }) {
 
   const focusOn = useCallback(
     (key: string, nextExpanded: ReadonlySet<string>) => {
-      const next = layoutMindMap(byId, rootId, nextExpanded, sides);
+      const next = layoutMindMap(byId, rootId, nextExpanded, shape);
       const node = next.nodes.find((item) => item.key === key);
       if (!node) return;
       let cx = node.x;
+      let cy = node.y;
       if (node.depth === 0) {
         cx = homeView.cx;
+        cy = homeView.cy;
       } else if (node.expanded) {
-        const toChildren = node.width / 2 + MIND_SIZES.gapX + MIND_SIZES.leaf.width / 2;
-        cx += node.side * toChildren * (narrow ? 0.72 : 0.5);
+        // Look ahead of an opened bubble, towards its children.
+        cx += Math.cos(node.angle) * MIND_SIZES.fanRadius * 0.55;
+        cy += Math.sin(node.angle) * MIND_SIZES.fanRadius * 0.55;
       }
       setGliding(true);
       setView((previous) => {
         const base = previous ?? homeView;
-        return { cx, cy: node.y, k: base.k < 0.6 ? 0.85 : base.k };
+        return { cx, cy, k: base.k < 0.6 ? 0.85 : base.k };
       });
     },
-    [byId, rootId, sides, homeView, narrow],
+    [byId, rootId, shape, homeView],
   );
 
   /** Select a card; `toggle` lets a second tap on the selected card fold it. */
@@ -175,7 +180,8 @@ export default function MindMapView({ model }: { model: MindMapModel }) {
       const next = new Set<string>();
       for (const item of expanded) {
         const onThisBranch = key.startsWith(`${item}${PATH_SEPARATOR}`) || item === key || item.startsWith(inside);
-        if (keepOpen || onThisBranch) next.add(item);
+        // One branch at a time: opening a bubble folds the others.
+        if (onThisBranch) next.add(item);
       }
       for (let length = 2; length < ids.length; length += 1) {
         next.add(pathKey(ids.slice(0, length)));
@@ -191,7 +197,7 @@ export default function MindMapView({ model }: { model: MindMapModel }) {
       setSelected(key);
       focusOn(key, next);
     },
-    [byId, expanded, focusOn, keepOpen, selected],
+    [byId, expanded, focusOn, selected],
   );
 
   const reset = useCallback(() => {
@@ -299,12 +305,15 @@ export default function MindMapView({ model }: { model: MindMapModel }) {
   // ---- derived ---------------------------------------------------------------
   const selectedIds = useMemo(() => (selected ? pathIds(selected) : [rootId]), [selected, rootId]);
   const selectedNode = selected ? byId.get(selectedIds[selectedIds.length - 1]) : undefined;
-  const selectedLaid = selected ? layout.nodes.find((node) => node.key === selected) : undefined;
   const onPath = useCallback(
     (key: string) =>
       selected !== null && (key === selected || selected.startsWith(`${key}${PATH_SEPARATOR}`)),
     [selected],
   );
+
+  const nextLinks = selectedNode
+    ? selectedNode.children.filter((link) => !selectedIds.includes(link.to) && byId.has(link.to))
+    : [];
 
   const results = useMemo(() => {
     const needle = query.trim().toLowerCase();
@@ -347,7 +356,12 @@ export default function MindMapView({ model }: { model: MindMapModel }) {
   };
 
   return (
-    <div className="mm" lang={lang === "mr" ? "mr" : "en"} data-lang={lang} data-sides={sides}>
+    <div
+      className="mm"
+      lang={lang === "mr" ? "mr" : "en"}
+      data-lang={lang}
+      data-detail={selectedNode ? "open" : undefined}
+    >
       <div
         ref={viewportRef}
         className="mm-viewport"
@@ -364,16 +378,16 @@ export default function MindMapView({ model }: { model: MindMapModel }) {
           }}
         >
           <svg className="mm-links" aria-hidden="true" width="1" height="1">
-            {layout.links.map((link) => {
-              const mid = (link.x1 + link.x2) / 2;
-              return (
-                <path
-                  key={link.key}
-                  className={`mm-link mm-link-${link.edgeType}${link.common ? " mm-link-common" : ""}${onPath(link.toKey) ? " mm-link-active" : ""}`}
-                  d={`M ${link.x1} ${link.y1} C ${mid} ${link.y1}, ${mid} ${link.y2}, ${link.x2} ${link.y2}`}
-                />
-              );
-            })}
+            {layout.links.map((link) => (
+              <line
+                key={link.key}
+                className={`mm-link mm-link-${link.edgeType}${link.common ? " mm-link-common" : ""}${onPath(link.toKey) ? " mm-link-active" : ""}`}
+                x1={link.x1}
+                y1={link.y1}
+                x2={link.x2}
+                y2={link.y2}
+              />
+            ))}
           </svg>
           {layout.nodes.map((node) => {
             const data = byId.get(node.id)!;
@@ -386,28 +400,29 @@ export default function MindMapView({ model }: { model: MindMapModel }) {
                   "mm-node",
                   `mm-depth-${Math.min(node.depth, 2)}`,
                   `mm-group-${TYPE_GROUP[data.type]}`,
-                  node.side === -1 ? "mm-left" : "mm-right",
                   isSelected ? "mm-selected" : "",
                   !isSelected && onPath(node.key) ? "mm-on-path" : "",
                 ].join(" ")}
                 style={{
-                  width: node.width,
-                  height: node.height,
-                  transform: `translate(${node.x - node.width / 2}px, ${node.y - node.height / 2}px)`,
+                  width: node.size,
+                  height: node.size,
+                  transform: `translate(${node.x - node.size / 2}px, ${node.y - node.size / 2}px)`,
                 }}
                 aria-expanded={node.childCount > 0 ? node.expanded : undefined}
                 aria-current={isSelected ? "true" : undefined}
+                aria-label={`${TYPE_LABELS[lang][data.type]}: ${titleOf(node.id)}`}
                 title={data.title}
                 onClick={() => cardClick(node)}
               >
-                <span className="mm-node-body">
-                  {node.depth > 0 && (
-                    <span className="mm-node-type">{TYPE_LABELS[lang][data.type]}</span>
+                <span className="mm-bubble">
+                  <NodeIcon node={data} strokeWidth={1.6} />
+                  {node.depth === 0 && (
+                    <span className="mm-root-title">{shortTitle(titleOf(node.id))}</span>
                   )}
-                  <span className="mm-node-title">
-                    {node.depth === 0 ? <mark>{titleOf(node.id)}</mark> : titleOf(node.id)}
-                  </span>
                 </span>
+                {node.depth > 0 && (
+                  <span className="mm-node-title">{shortTitle(titleOf(node.id))}</span>
+                )}
                 {node.depth > 0 && node.childCount > 0 && (
                   <span className="mm-node-count" aria-hidden="true">
                     {node.expanded ? "−" : `+${num(node.childCount)}`}
@@ -447,14 +462,6 @@ export default function MindMapView({ model }: { model: MindMapModel }) {
           <mark>{t.headlineMark}</mark>
           {t.headlineAfter}
         </h1>
-        <div className="mm-chips">
-          <span className="mm-chip">
-            {num(model.nodeCount)} {t.stops}
-          </span>
-          <span className="mm-chip">
-            {num(model.edgeCount)} {t.links}
-          </span>
-        </div>
         <div className="mm-search">
           <input
             type="search"
@@ -511,14 +518,6 @@ export default function MindMapView({ model }: { model: MindMapModel }) {
       </div>
 
       <div className="mm-tools">
-        <button
-          type="button"
-          className={`mm-tool mm-tool-wide${keepOpen ? " mm-tool-on" : ""}`}
-          aria-pressed={keepOpen}
-          onClick={() => setKeepOpen((value) => !value)}
-        >
-          {t.keepOpen}
-        </button>
         <button type="button" className="mm-tool" onClick={() => zoomBy(1.25)} aria-label={t.zoomIn}>
           +
         </button>
@@ -540,18 +539,23 @@ export default function MindMapView({ model }: { model: MindMapModel }) {
           >
             ×
           </button>
-          <span className={`mm-tag mm-group-${TYPE_GROUP[selectedNode.type]}`}>
-            {TYPE_LABELS[lang][selectedNode.type]}
-          </span>
-          <h2 className="mm-detail-title">{titleOf(selectedNode.id)}</h2>
+          <div className="mm-detail-head">
+            <span className={`mm-ring mm-group-${TYPE_GROUP[selectedNode.type]}`}>
+              <NodeIcon node={selectedNode} strokeWidth={1.5} />
+            </span>
+            <div>
+              <span className={`mm-tag mm-group-${TYPE_GROUP[selectedNode.type]}`}>
+                {TYPE_LABELS[lang][selectedNode.type]}
+              </span>
+              <h2 className="mm-detail-title">{titleOf(selectedNode.id)}</h2>
+            </div>
+          </div>
           <p className="mm-detail-text" lang="en">
             {selectedNode.description}
           </p>
           <div className="mm-chips">
             <span className="mm-chip">
-              {selectedNode.children.length === 0
-                ? t.endOfRoute
-                : `${num(selectedLaid?.childCount ?? selectedNode.children.length)} ${t.nextSteps}`}
+              {nextLinks.length === 0 ? t.endOfRoute : `${num(nextLinks.length)} ${t.nextSteps}`}
             </span>
             {selectedNode.incoming > 1 && (
               <span className="mm-chip mm-chip-quiet">
@@ -559,6 +563,27 @@ export default function MindMapView({ model }: { model: MindMapModel }) {
               </span>
             )}
           </div>
+          {nextLinks.length > 0 && (
+            <ul className="mm-next" aria-label={t.nextSteps}>
+              {nextLinks.map((link) => {
+                const child = byId.get(link.to)!;
+                return (
+                  <li key={link.to}>
+                    <button
+                      type="button"
+                      className={`mm-next-item mm-group-${TYPE_GROUP[child.type]}`}
+                      onClick={() => open(pathKey([...selectedIds, link.to]), false)}
+                    >
+                      <span className="mm-next-icon">
+                        <NodeIcon node={child} strokeWidth={1.7} />
+                      </span>
+                      {shortTitle(titleOf(link.to))}
+                    </button>
+                  </li>
+                );
+              })}
+            </ul>
+          )}
           {lang === "mr" && <p className="mm-detail-note">{t.englishNote}</p>}
           <div className="mm-detail-actions">
             <Link href={selectedNode.href} className="mm-button mm-button-solid">
@@ -586,7 +611,7 @@ export default function MindMapView({ model }: { model: MindMapModel }) {
                   onClick={() => open(pathKey(selectedIds.slice(0, index + 1)), false)}
                 >
                   <span className="mm-step-number">{num(index + 1)}</span>
-                  <span className="mm-step-title">{titleOf(id)}</span>
+                  <span className="mm-step-title">{shortTitle(titleOf(id))}</span>
                 </button>
               </li>
             );

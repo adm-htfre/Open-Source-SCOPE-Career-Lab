@@ -13,6 +13,7 @@
   --green: #2f8a4f;
   --grid: rgba(21, 23, 28, 0.05);
   --shadow: 0 2px 0 rgba(21, 23, 28, 0.08), 0 10px 24px rgba(88, 70, 30, 0.12);
+  --on-accent: #fff;
   --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
   --serif: var(--font-mm-serif), "Source Serif 4", Georgia, serif;
   --caps: var(--font-mm-caps), "Archivo", "Arial Black", sans-serif;
@@ -44,6 +45,7 @@
     --green: #5cc483;
     --grid: rgba(241, 236, 224, 0.05);
     --shadow: 0 2px 0 rgba(0, 0, 0, 0.3), 0 10px 24px rgba(0, 0, 0, 0.35);
+    --on-accent: #15171c;
   }
 }
 
@@ -59,7 +61,6 @@
   text-transform: none;
   font-weight: 700;
 }
-.mm[data-lang="mr"] .mm-node-type { font-size: 9.5px; line-height: 1.15; }
 .mm[data-lang="mr"] :is(.mm-eyebrow, .mm-chip, .mm-tag, .mm-legend-item, .mm-results-type) { font-size: 12.5px; }
 .mm[data-lang="mr"] :is(.mm-tool-wide, .mm-button) { font-size: 13.5px; }
 .mm[data-lang="mr"] .mm-rail-brand { font-size: 15px; }
@@ -114,12 +115,6 @@
   transform-origin: 0 0;
   will-change: transform;
 }
-/* One-sided on mid-width screens: start the map to the right of the header. */
-@media (min-width: 761px) {
-  .mm[data-sides="1"] .mm-world {
-    left: 500px;
-  }
-}
 .mm-world.mm-gliding {
   transition: transform 0.55s var(--ease);
 }
@@ -160,81 +155,94 @@
   opacity: 1;
 }
 
-/* ---- cards ---------------------------------------------------------------- */
+/* ---- bubbles -------------------------------------------------------------- */
 
 .mm-node {
   --group: var(--hl);
   position: absolute;
   left: 0;
   top: 0;
-  display: flex;
-  align-items: center;
-  padding: 0 12px 0 16px;
-  text-align: left;
-  background: var(--card);
-  border: 2px solid var(--ink);
-  border-radius: 12px;
-  box-shadow: var(--shadow);
-  transition:
-    transform 0.5s var(--ease),
-    border-color 0.25s var(--ease),
-    box-shadow 0.25s var(--ease);
+  padding: 0;
+  background: none;
+  border: 0;
+  border-radius: 50%;
+  transition: transform 0.55s var(--ease);
   animation: mm-fade 0.45s var(--ease) both;
 }
-.mm-node::before {
-  content: "";
-  position: absolute;
-  left: 5px;
-  top: 8px;
-  bottom: 8px;
-  width: 5px;
-  border-radius: 3px;
-  background: var(--group);
-}
-.mm-node.mm-left {
-  padding: 0 16px 0 12px;
-}
-.mm-node.mm-left::before {
-  left: auto;
-  right: 5px;
-}
-.mm-node:hover {
-  box-shadow: 0 0 0 3px var(--hl), var(--shadow);
-}
-.mm-node.mm-on-path {
-  border-color: var(--blue);
-}
-.mm-node.mm-selected {
-  border-color: var(--blue);
-  box-shadow: 0 0 0 3px var(--ink), var(--shadow);
-}
-
 .mm-group-start { --group: var(--hl); }
 .mm-group-study { --group: var(--blue); }
 .mm-group-exam { --group: var(--red); }
 .mm-group-work { --group: var(--green); }
 
-.mm-node-body {
+.mm-bubble {
+  position: absolute;
+  inset: 0;
   display: flex;
   flex-direction: column;
-  gap: 2px;
-  min-width: 0;
-  flex: 1;
-  animation: mm-rise 0.45s var(--ease) both;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  border-radius: 50%;
+  border: 2px solid var(--ink);
+  /* Card colour washed with the kind's colour, plus an inner ring of it. */
+  background: color-mix(in srgb, var(--group) 20%, var(--card));
+  box-shadow: inset 0 0 0 4px var(--card), inset 0 0 0 7px var(--group), var(--shadow);
+  transition: border-color 0.25s var(--ease), box-shadow 0.25s var(--ease), transform 0.25s var(--ease);
 }
-.mm-node-type {
-  font-family: var(--caps);
-  font-weight: 800;
-  font-size: 8.5px;
-  line-height: 1.2;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--muted);
+.mm-bubble svg {
+  width: 44%;
+  height: 44%;
+  color: var(--ink);
 }
+.mm-node:hover .mm-bubble {
+  transform: scale(1.06);
+}
+.mm-node.mm-on-path .mm-bubble {
+  border-color: var(--blue);
+}
+.mm-node.mm-selected .mm-bubble {
+  border-color: var(--blue);
+  box-shadow:
+    inset 0 0 0 4px var(--card),
+    inset 0 0 0 7px var(--group),
+    0 0 0 3px var(--card),
+    0 0 0 6px var(--ink),
+    var(--shadow);
+}
+.mm-depth-0 .mm-bubble {
+  border-width: 3px;
+  background: var(--hl);
+  box-shadow: inset 0 0 0 5px var(--card), inset 0 0 0 7px var(--ink), var(--shadow);
+}
+.mm-depth-0 .mm-bubble svg {
+  width: 34%;
+  height: 34%;
+  color: #15171c;
+}
+.mm-root-title {
+  max-width: 78%;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.15;
+  color: #15171c;
+  text-align: center;
+}
+
 .mm-node-title {
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 50%;
+  width: max-content;
+  max-width: 128px;
+  transform: translateX(-50%);
+  padding: 2px 6px 3px;
+  border-radius: 4px;
+  background: var(--card);
+  box-shadow: 0 0 0 1.5px color-mix(in srgb, var(--ink) 18%, transparent);
+  font-size: 12px;
   font-weight: 600;
-  font-size: 13px;
-  line-height: 1.22;
+  line-height: 1.2;
+  text-align: center;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
@@ -242,37 +250,27 @@
   overflow: hidden;
 }
 .mm-depth-1 .mm-node-title {
-  font-size: 14.5px;
+  max-width: 136px;
+  font-size: 13px;
   font-weight: 700;
-}
-.mm-depth-0 {
-  justify-content: center;
-  text-align: center;
-  padding: 0 14px;
-  border-width: 3px;
-  border-radius: 16px;
-}
-.mm-depth-0::before {
-  display: none;
-}
-.mm-depth-0 .mm-node-title {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 1.25;
 }
 .mm[data-lang="mr"] .mm-depth-1 .mm-node-title,
-.mm[data-lang="mr"] .mm-depth-0 .mm-node-title {
+.mm[data-lang="mr"] .mm-root-title {
   font-weight: 400;
-  line-height: 1.32;
+  line-height: 1.3;
+}
+.mm-selected .mm-node-title {
+  background: var(--blue);
+  color: var(--on-accent);
+  box-shadow: none;
 }
 
 .mm-node-count {
   position: absolute;
-  top: 50%;
-  right: -24px;
-  transform: translateY(-50%);
-  min-width: 30px;
-  height: 22px;
+  top: -2px;
+  right: -6px;
+  min-width: 28px;
+  height: 21px;
   padding: 0 6px;
   display: grid;
   place-items: center;
@@ -283,10 +281,6 @@
   font-weight: 800;
   font-size: 10px;
   letter-spacing: 0.04em;
-}
-.mm-left .mm-node-count {
-  right: auto;
-  left: -24px;
 }
 
 /* ---- header --------------------------------------------------------------- */
@@ -581,15 +575,72 @@
   text-transform: uppercase;
 }
 .mm-tag:is(.mm-group-study, .mm-group-exam, .mm-group-work) {
-  color: #fff;
+  color: var(--on-accent);
 }
-@media (prefers-color-scheme: dark) {
-  .mm-tag:is(.mm-group-study, .mm-group-exam, .mm-group-work) {
-    color: #15171c;
-  }
+.mm-detail-head {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 0 22px 12px 0;
+}
+.mm-ring {
+  flex: none;
+  width: 86px;
+  height: 86px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  border: 2px solid var(--ink);
+  background: color-mix(in srgb, var(--group) 20%, var(--card));
+  box-shadow: inset 0 0 0 4px var(--card), inset 0 0 0 7px var(--group);
+}
+.mm-ring svg {
+  width: 40px;
+  height: 40px;
+}
+.mm-next {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 12px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.mm-next-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 9px 3px 3px;
+  background: var(--card);
+  border: 1.5px solid var(--ink);
+  border-radius: 16px;
+  font-size: 12.5px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: left;
+  transition: background 0.2s var(--ease);
+}
+.mm-next-item:hover {
+  background: var(--hl);
+  color: #15171c;
+}
+.mm-next-icon {
+  flex: none;
+  width: 24px;
+  height: 24px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--group) 30%, var(--card));
+  border: 1.5px solid var(--ink);
+  color: var(--ink);
+}
+.mm-next-icon svg {
+  width: 13px;
+  height: 13px;
 }
 .mm-detail-title {
-  margin: 10px 24px 8px 0;
+  margin: 8px 0 0;
   font-size: 22px;
   font-weight: 700;
   line-height: 1.2;
@@ -720,13 +771,8 @@
 .mm-step-current {
   background: var(--blue);
   border-color: var(--blue);
-  color: #fff;
+  color: var(--on-accent);
   box-shadow: 0 0 0 2px var(--card), 0 0 0 4px var(--ink);
-}
-@media (prefers-color-scheme: dark) {
-  .mm-step-current {
-    color: #15171c;
-  }
 }
 .mm-step-current .mm-step-number {
   background: #fff;
@@ -755,7 +801,6 @@
     font-size: 20px;
     margin: 6px 0 0;
   }
-  .mm-header .mm-chips,
   .mm-hint,
   .mm-legend,
   .mm-rail-brand {
@@ -765,7 +810,15 @@
     margin-top: 8px;
   }
   .mm-world {
-    top: 40%;
+    top: 52%;
+    transition: top 0.5s var(--ease);
+  }
+  /* The detail sheet covers the lower part of the screen; lift the map. */
+  .mm[data-detail="open"] .mm-world {
+    top: 33%;
+  }
+  .mm-world.mm-gliding {
+    transition: transform 0.55s var(--ease), top 0.5s var(--ease);
   }
   .mm-tools {
     right: 10px;
@@ -777,12 +830,30 @@
     top: auto;
     bottom: calc(var(--rail) + 58px);
     width: auto;
-    max-height: 34%;
+    max-height: 40%;
     padding: 12px 14px;
   }
   .mm-detail-title {
     font-size: 18px;
-    margin-top: 6px;
+  }
+  .mm-ring {
+    width: 60px;
+    height: 60px;
+  }
+  .mm-ring svg {
+    width: 28px;
+    height: 28px;
+  }
+  .mm-detail-head {
+    margin-bottom: 8px;
+  }
+  .mm-next {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .mm-next li {
+    flex: none;
   }
   .mm-detail-text {
     font-size: 14px;

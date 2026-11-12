@@ -126,13 +126,13 @@ export interface LaidNode {
   id: string;
   parentKey: string | null;
   depth: number;
-  /** -1 = left of the root, 1 = right, 0 = the root itself. */
-  side: -1 | 0 | 1;
-  /** Centre of the card. */
+  /** Centre of the bubble. */
   x: number;
   y: number;
-  width: number;
-  height: number;
+  /** Diameter of the bubble. */
+  size: number;
+  /** Direction this node points away from its parent, in radians. */
+  angle: number;
   /** Children this node can open (ancestors on its own path are skipped). */
   childCount: number;
   expanded: boolean;
@@ -157,12 +157,22 @@ export interface MindLayout {
 }
 
 export const MIND_SIZES = {
-  root: { width: 200, height: 84 },
-  branch: { width: 216, height: 62 },
-  leaf: { width: 204, height: 54 },
-  gapX: 64,
-  gapY: 12,
+  root: 148,
+  branch: 96,
+  leaf: 82,
+  /** Room one bubble and its label need along an arc. */
+  spacing: 134,
+  /** Distance between the two staggered rows of a crowded fan. */
+  stagger: 122,
+  /** Smallest distance from an opened bubble to its children. */
+  fanRadius: 205,
+  /** How far an opened bubble moves outward so its fan clears its siblings. */
+  reach: 250,
+  /** Radii of the first ring: wide for landscape screens, tall for phones. */
+  ring: { wide: { rx: 340, ry: 240 }, tall: { rx: 186, ry: 292 } },
 };
+
+export type MindShape = keyof typeof MIND_SIZES.ring;
 
 function sizeAt(depth: number) {
   if (depth === 0) return MIND_SIZES.root;
@@ -170,26 +180,22 @@ function sizeAt(depth: number) {
 }
 
 /**
- * Tidy two-sided (or one-sided, for narrow screens) mind-map layout. Only
- * branches whose path key is in `expanded` show their children; the root is
- * always open.
+ * Radial mind-map layout: the root sits in the centre with its children all
+ * around it. An opened branch moves outward and fans its own children out
+ * ahead of it, away from where it came from. Only branches whose path key is
+ * in `expanded` show their children; the root is always open.
  */
 export function layoutMindMap(
   byId: Map<string, MindNode>,
   rootId: string,
   expanded: ReadonlySet<string>,
-  sides: 1 | 2 = 2,
+  shape: MindShape = "wide",
 ): MindLayout {
   const nodes: LaidNode[] = [];
   const links: LaidLink[] = [];
+  const half = MIND_SIZES.root / 2;
+  const bounds = { minX: -half, maxX: half, minY: -half, maxY: half };
   const root = byId.get(rootId);
-  const rootSize = sizeAt(0);
-  const bounds = {
-    minX: -rootSize.width / 2,
-    maxX: rootSize.width / 2,
-    minY: -rootSize.height / 2,
-    maxY: rootSize.height / 2,
-  };
   if (!root) return { nodes, links, bounds };
 
   const visibleChildren = (ids: string[]): MindLink[] => {
@@ -197,45 +203,29 @@ export function layoutMindMap(
     if (!node) return [];
     return node.children.filter((link) => !ids.includes(link.to) && byId.has(link.to));
   };
-  const isOpen = (ids: string[]) => ids.length === 1 || expanded.has(pathKey(ids));
 
-  const heights = new Map<string, number>();
-  const measure = (ids: string[]): number => {
-    const own = sizeAt(ids.length - 1).height + MIND_SIZES.gapY;
-    let total = 0;
-    if (isOpen(ids)) {
-      for (const link of visibleChildren(ids)) total += measure([...ids, link.to]);
-    }
-    const height = Math.max(own, total);
-    heights.set(pathKey(ids), height);
-    return height;
-  };
-
-  const xAt = (depth: number, side: -1 | 1) => {
-    let x = rootSize.width / 2;
-    for (let level = 1; level <= depth; level += 1) {
-      x += MIND_SIZES.gapX + sizeAt(level).width / (level === depth ? 2 : 1);
-    }
-    return side * x;
-  };
-
-  const place = (ids: string[], side: -1 | 1, top: number, edge: MindLink, parent: LaidNode) => {
+  const add = (
+    ids: string[],
+    parent: LaidNode,
+    edge: MindLink,
+    x: number,
+    y: number,
+    angle: number,
+  ) => {
     const key = pathKey(ids);
     const depth = ids.length - 1;
-    const size = sizeAt(depth);
-    const block = heights.get(key)!;
     const kids = visibleChildren(ids);
-    const open = isOpen(ids) && kids.length > 0;
+    const open = expanded.has(key) && kids.length > 0;
+    const reach = open ? MIND_SIZES.reach : 0;
     const laid: LaidNode = {
       key,
       id: ids[depth],
       parentKey: parent.key,
       depth,
-      side,
-      x: xAt(depth, side),
-      y: top + block / 2,
-      width: size.width,
-      height: size.height,
+      x: x + Math.cos(angle) * reach,
+      y: y + Math.sin(angle) * reach,
+      size: sizeAt(depth),
+      angle,
       childCount: kids.length,
       expanded: open,
     };
@@ -246,26 +236,40 @@ export function layoutMindMap(
       toKey: key,
       edgeType: edge.edgeType,
       common: edge.common,
-      x1: parent.x + (side * parent.width) / 2,
+      x1: parent.x,
       y1: parent.y,
-      x2: laid.x - (side * laid.width) / 2,
+      x2: laid.x,
       y2: laid.y,
     });
-    bounds.minX = Math.min(bounds.minX, laid.x - size.width / 2);
-    bounds.maxX = Math.max(bounds.maxX, laid.x + size.width / 2);
-    bounds.minY = Math.min(bounds.minY, laid.y - size.height / 2);
-    bounds.maxY = Math.max(bounds.maxY, laid.y + size.height / 2);
-    if (!open) return;
-    const kidsHeight = kids.reduce(
-      (sum, link) => sum + heights.get(pathKey([...ids, link.to]))!,
-      0,
-    );
-    let cursor = top + (block - kidsHeight) / 2;
-    for (const link of kids) {
-      const childIds = [...ids, link.to];
-      place(childIds, side, cursor, link, laid);
-      cursor += heights.get(pathKey(childIds))!;
-    }
+    const pad = laid.size / 2;
+    bounds.minX = Math.min(bounds.minX, laid.x - pad);
+    bounds.maxX = Math.max(bounds.maxX, laid.x + pad);
+    bounds.minY = Math.min(bounds.minY, laid.y - pad);
+    bounds.maxY = Math.max(bounds.maxY, laid.y + pad);
+    if (open) fan(ids, laid, kids);
+  };
+
+  /** Children of an opened bubble, on an arc ahead of it. */
+  const fan = (ids: string[], parent: LaidNode, kids: MindLink[]) => {
+    const count = kids.length;
+    const singleStep = MIND_SIZES.spacing / MIND_SIZES.fanRadius;
+    const staggered = (count - 1) * singleStep > Math.PI;
+    const step = count < 2 ? 0 : staggered ? Math.PI / (count - 1) : singleStep;
+    const radius = staggered
+      ? Math.max(MIND_SIZES.fanRadius, MIND_SIZES.spacing / (2 * step))
+      : MIND_SIZES.fanRadius;
+    kids.forEach((link, index) => {
+      const angle = parent.angle + (index - (count - 1) / 2) * step;
+      const distance = radius + (staggered && index % 2 === 1 ? MIND_SIZES.stagger : 0);
+      add(
+        [...ids, link.to],
+        parent,
+        link,
+        parent.x + Math.cos(angle) * distance,
+        parent.y + Math.sin(angle) * distance,
+        angle,
+      );
+    });
   };
 
   const rootKids = visibleChildren([rootId]);
@@ -274,30 +278,52 @@ export function layoutMindMap(
     id: rootId,
     parentKey: null,
     depth: 0,
-    side: 0,
     x: 0,
     y: 0,
-    width: rootSize.width,
-    height: rootSize.height,
+    size: MIND_SIZES.root,
+    angle: 0,
     childCount: rootKids.length,
     expanded: true,
   };
   nodes.push(laidRoot);
 
-  const split = sides === 2 ? Math.ceil(rootKids.length / 2) : rootKids.length;
-  const groups: [(-1 | 1), MindLink[]][] = [
-    [1, rootKids.slice(0, split)],
-    [-1, rootKids.slice(split)],
-  ];
-  for (const [side, group] of groups) {
-    const total = group.reduce((sum, link) => sum + measure([rootId, link.to]), 0);
-    let cursor = -total / 2;
-    for (const link of group) {
-      const ids = [rootId, link.to];
-      place(ids, side, cursor, link, laidRoot);
-      cursor += heights.get(pathKey(ids))!;
-    }
-  }
+  const ring = ellipsePoints(MIND_SIZES.ring[shape], rootKids.length);
+  rootKids.forEach((link, index) => {
+    const { x, y } = ring[index];
+    add([rootId, link.to], laidRoot, link, x, y, Math.atan2(y, x));
+  });
 
   return { nodes, links, bounds };
+}
+
+/**
+ * `count` points spaced evenly along an ellipse by arc length (equal angles
+ * would crowd them at the narrow ends), starting at the top, clockwise.
+ */
+function ellipsePoints({ rx, ry }: { rx: number; ry: number }, count: number) {
+  const steps = 720;
+  const at = (step: number) => {
+    const turn = -Math.PI / 2 + (step / steps) * 2 * Math.PI;
+    return { x: Math.cos(turn) * rx, y: Math.sin(turn) * ry };
+  };
+  const lengths = [0];
+  for (let step = 1; step <= steps; step += 1) {
+    const a = at(step - 1);
+    const b = at(step);
+    lengths.push(lengths[step - 1] + Math.hypot(b.x - a.x, b.y - a.y));
+  }
+  const points: { x: number; y: number }[] = [];
+  let step = 0;
+  for (let index = 0; index < count; index += 1) {
+    const target = (lengths[steps] * index) / count;
+    while (step < steps && lengths[step] < target) step += 1;
+    points.push(at(step));
+  }
+  return points;
+}
+
+/** A short label for a bubble: the title without its trailing "(…)" gloss. */
+export function shortTitle(title: string): string {
+  const trimmed = title.replace(/\s*\([^()]*\)\s*$/, "").trim();
+  return trimmed.length >= 3 ? trimmed : title;
 }

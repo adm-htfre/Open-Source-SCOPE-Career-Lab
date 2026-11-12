@@ -7,8 +7,6 @@ interface Strings {
   headlineBefore: string;
   headlineMark: string;
   headlineAfter: string;
-  stops: string;
-  links: string;
   searchPlaceholder: string;
   noResults: string;
   guideOnly: string;
@@ -17,7 +15,6 @@ interface Strings {
   groups: { start: string; study: string; exam: string; work: string };
   examGate: string;
   lateral: string;
-  keepOpen: string;
   zoomIn: string;
   zoomOut: string;
   reset: string;
@@ -40,17 +37,14 @@ export const STRINGS: Record<Lang, Strings> = {
     headlineBefore: "Every route starts at ",
     headlineMark: "Class 10",
     headlineAfter: "",
-    stops: "stops",
-    links: "links",
     searchPlaceholder: "Find a course, exam or career",
     noResults: "Nothing found. Try another word.",
     guideOnly: "Guide",
-    hint: "Tap a card to open its branch. Drag to move, pinch or scroll to zoom.",
+    hint: "Tap a picture to open it.",
     legend: "Key",
     groups: { start: "School", study: "Study", exam: "Exam", work: "Work" },
     examGate: "Through an exam",
     lateral: "Sideways move",
-    keepOpen: "Keep branches open",
     zoomIn: "Zoom in",
     zoomOut: "Zoom out",
     reset: "Start again",
@@ -71,17 +65,14 @@ export const STRINGS: Record<Lang, Strings> = {
     headlineBefore: "प्रत्येक वाट ",
     headlineMark: "दहावी",
     headlineAfter: "पासून सुरू होते",
-    stops: "टप्पे",
-    links: "जोडण्या",
     searchPlaceholder: "अभ्यासक्रम, परीक्षा किंवा करिअर शोधा",
     noResults: "काही सापडले नाही. दुसरा शब्द वापरून पहा.",
     guideOnly: "मार्गदर्शक",
-    hint: "फांदी उघडण्यासाठी कार्डावर टॅप करा. हलवण्यासाठी ओढा, झूमसाठी चिमटा किंवा स्क्रोल करा.",
+    hint: "उघडण्यासाठी चित्रावर टॅप करा.",
     legend: "सूची",
     groups: { start: "शाळा", study: "शिक्षण", exam: "परीक्षा", work: "काम" },
     examGate: "परीक्षेतून",
     lateral: "बाजूचा बदल",
-    keepOpen: "फांद्या उघड्या ठेवा",
     zoomIn: "मोठे करा",
     zoomOut: "लहान करा",
     reset: "पुन्हा सुरू करा",

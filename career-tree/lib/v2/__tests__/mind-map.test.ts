@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { V2Graph } from "../graph-core";
-import { buildMindMap, layoutMindMap, pathKey, routeTo, type MindNode } from "../mind-map";
+import { buildMindMap, layoutMindMap, pathKey, routeTo, shortTitle, type MindNode } from "../mind-map";
 import type { V2Edge, V2EdgeType, V2GraphSnapshot, V2Node, V2NodeType } from "../types";
 
 const prov = { model: "fixture", prompt_version: "v2", generated_at: "2026-07-19", source_urls: [] };
@@ -83,18 +83,29 @@ describe("layoutMindMap", () => {
     expect(layout.links).toHaveLength(3);
   });
 
-  it("splits the first ring across both sides, or keeps it on one", () => {
-    const both = layoutMindMap(byId, ROOT, new Set(), 2).nodes.filter((item) => item.depth === 1);
-    expect(both.map((item) => item.side).sort()).toEqual([-1, 1, 1]);
-    const one = layoutMindMap(byId, ROOT, new Set(), 1).nodes.filter((item) => item.depth === 1);
-    expect(one.every((item) => item.side === 1 && item.x > 0)).toBe(true);
+  it("puts the first ring all around the root", () => {
+    const ring = layoutMindMap(byId, ROOT, new Set()).nodes.filter((item) => item.depth === 1);
+    expect(ring.some((item) => item.x < -1)).toBe(true);
+    expect(ring.some((item) => item.x > 1)).toBe(true);
+    expect(ring.some((item) => item.y < -1)).toBe(true);
+    expect(ring.some((item) => item.y > 1)).toBe(true);
   });
 
-  it("keeps one canonical node as separate cards under each parent", () => {
+  it("moves an opened branch outward and fans its children beyond it", () => {
+    const key = pathKey([ROOT, "stream:commerce"]);
+    const closed = layoutMindMap(byId, ROOT, new Set()).nodes.find((item) => item.key === key)!;
+    const layout = layoutMindMap(byId, ROOT, new Set([key]));
+    const open = layout.nodes.find((item) => item.key === key)!;
+    const child = layout.nodes.find((item) => item.parentKey === key)!;
+    expect(Math.hypot(open.x, open.y)).toBeGreaterThan(Math.hypot(closed.x, closed.y));
+    expect(Math.hypot(child.x, child.y)).toBeGreaterThan(Math.hypot(open.x, open.y));
+  });
+
+  it("keeps one canonical node as separate bubbles under each parent", () => {
     const expanded = new Set([pathKey([ROOT, "stream:science"]), pathKey([ROOT, "stream:commerce"])]);
-    const cards = layoutMindMap(byId, ROOT, expanded).nodes.filter((item) => item.id === "degree:bca");
-    expect(cards).toHaveLength(2);
-    expect(new Set(cards.map((item) => item.key)).size).toBe(2);
+    const bubbles = layoutMindMap(byId, ROOT, expanded).nodes.filter((item) => item.id === "degree:bca");
+    expect(bubbles).toHaveLength(2);
+    expect(new Set(bubbles.map((item) => item.key)).size).toBe(2);
   });
 
   it("never repeats an ancestor further down its own path", () => {
@@ -108,12 +119,22 @@ describe("layoutMindMap", () => {
     expect(layout.nodes.filter((item) => item.id === "degree:bca")).toHaveLength(1);
   });
 
-  it("does not overlap sibling cards", () => {
-    const expanded = new Set([pathKey([ROOT, "stream:commerce"])]);
-    const layout = layoutMindMap(byId, ROOT, expanded, 1);
-    const ring = layout.nodes.filter((item) => item.depth === 1).sort((a, b) => a.y - b.y);
-    for (let index = 1; index < ring.length; index += 1) {
-      expect(ring[index].y - ring[index - 1].y).toBeGreaterThanOrEqual(ring[index].height);
+  it("does not overlap bubbles in the first ring, wide or tall", () => {
+    for (const shape of ["wide", "tall"] as const) {
+      const ring = layoutMindMap(byId, ROOT, new Set(), shape).nodes.filter((item) => item.depth === 1);
+      for (const a of ring) {
+        for (const b of ring) {
+          if (a !== b) expect(Math.hypot(a.x - b.x, a.y - b.y)).toBeGreaterThan(a.size);
+        }
+      }
     }
+  });
+});
+
+describe("shortTitle", () => {
+  it("drops a trailing gloss but keeps short names whole", () => {
+    expect(shortTitle("B.Tech (Bachelor of Technology)")).toBe("B.Tech");
+    expect(shortTitle("Science Stream — PCM (Physics, Chemistry, Maths)")).toBe("Science Stream — PCM");
+    expect(shortTitle("JEE Main")).toBe("JEE Main");
   });
 });

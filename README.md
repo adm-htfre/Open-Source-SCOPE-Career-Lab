@@ -36,10 +36,12 @@ moderation dry-run procedure) lives in [`docs/OPERATIONS.md`](docs/OPERATIONS.md
   small DAG diagram (dagre layout, custom SVG) with the active route highlighted.
 - **Global map** — `/map` renders the whole graph in React Flow: one visual node per
   stable ID, edges colored by distance from the root, filterable by text and node type.
-- **Mind map** — `/mindmap` unfolds the graph from Class 10 as a mind map you open one
-  branch at a time: tap a card to see what comes next, follow the numbered path along the
-  bottom rail, and jump to any node from search. English + मराठी interface, light and dark,
-  built for classroom boards and phones (SCOPE "paper and highlighter" design language).
+- **Mind map** — `/mindmap` shows the graph as a radial mind map: Class 10 in the centre,
+  its branches all around, each node an illustrated bubble (picture = field, colour = kind).
+  Tap a bubble to open its branch and a detail card with what comes next; follow the
+  numbered path along the bottom rail or jump to any node from search. English + मराठी
+  interface, light and dark, built for classroom boards and phones (SCOPE "paper and
+  highlighter" design language).
 - **Crowdsourced, moderated data** — "Suggest a path" and "Edit guide" forms write
   pending rows to Supabase; a private AI + human-in-the-loop review tool merges approved
   changes back into the canonical registry. Nothing goes live unreviewed.
