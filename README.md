@@ -11,7 +11,7 @@ entity — a degree, an entrance exam, a job role, a government service — exis
 once, carries an immutable stable ID, and connects to every route that can legitimately
 reach it. The current release ships:
 
-- **677 canonical nodes** and **1,505 directed edges**
+- **711 canonical nodes** and **1,676 directed edges**
 - a **source-backed guide for every node** — every quick fact and article section cites
   at least one public source
 - an interactive explorer, per-guide route maps, and a global graph map
@@ -42,6 +42,12 @@ moderation dry-run procedure) lives in [`docs/OPERATIONS.md`](docs/OPERATIONS.md
   numbered path along the bottom rail or jump to any node from search. English + मराठी
   interface, light and dark, built for classroom boards and phones (SCOPE "paper and
   highlighter" design language).
+- **Tech-company jobs (fork addition)** — 34 jobs found across a large technology company
+  (legal, supply chain, hardware design, reliability, manufacturing, data and security,
+  programme management, HR, finance, sales engineering, support) were added by hand with
+  `pipeline/manual/add_tech_company_jobs.py`, not by the automated pipeline. Each has a short
+  cited guide, carries its own provenance (`claude-fable-5-2` / `v2-manual-1`) and is flagged
+  `needs_review` until a person has checked it.
 - **Crowdsourced, moderated data** — "Suggest a path" and "Edit guide" forms write
   pending rows to Supabase; a private AI + human-in-the-loop review tool merges approved
   changes back into the canonical registry. Nothing goes live unreviewed.
@@ -208,7 +214,7 @@ atomic and sorted for clean diffs. Runtime caches and usage ledgers under
 
 The entire graph is bundled at build time via a single `server-only` module
 (`lib/v2/data.ts`) — there is no runtime database read for browsing. All guide and
-explorer pages are statically generated (`generateStaticParams` over all 677 nodes,
+explorer pages are statically generated (`generateStaticParams` over all 711 nodes,
 `dynamicParams = false`, so unknown routes are real 404s).
 
 | Route | What it is |
@@ -243,8 +249,8 @@ export.
 
 ```text
 pipeline/                     canonical data pipeline (run from repo root)
-  registry/nodes.jsonl        ← canonical node registry (677)
-  registry/edges.jsonl        ← canonical edge registry (1,505)
+  registry/nodes.jsonl        ← canonical node registry (711)
+  registry/edges.jsonl        ← canonical edge registry (1,676)
   state/frontier.json         resumable BFS expansion state
   eval/                       frozen ER labels (655 pairs) + calibration report
   ledger/er_decisions.jsonl   committed ER audit trail (runtime caches gitignored)
@@ -349,7 +355,7 @@ committed dataset.
 | Check | Command (from) | Expected |
 | --- | --- | --- |
 | Pipeline tests | `python -m pytest pipeline/tests -q -p no:httpbin` (root) | 90 tests pass |
-| Release lint | `python pipeline/lint.py --release` (root) | zero errors; 677 nodes, 1,505 edges |
+| Release lint | `python pipeline/lint.py --release` (root) | zero errors; 711 nodes, 1,676 edges |
 | Snapshot freshness | `python pipeline/export_frontend.py --check` (root) | "snapshot is current" |
 | Frontend tests | `npm test` (`career-tree/`) | 99 tests across 33 files pass |
 | Frontend lint | `npm run lint` (`career-tree/`) | clean |

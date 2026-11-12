@@ -63,16 +63,24 @@ export function buildMindMap(graph: V2Graph): MindMapModel {
           title(a.to).localeCompare(title(b.to)),
       );
 
-  // Breadth-first from the root over the sorted children, so `via` follows
-  // the most common shortest route.
+  // Cheapest route from the root, where an uncommon link costs as much as
+  // three common ones, so `via` follows the usual way people reach a node
+  // rather than a rare shortcut.
   const via = new Map<string, string | null>([[graph.rootId, null]]);
-  const queue = [graph.rootId];
-  for (let head = 0; head < queue.length; head += 1) {
-    const current = queue[head];
+  const cost = new Map<string, number>([[graph.rootId, 0]]);
+  const settled = new Set<string>();
+  for (;;) {
+    let current: string | null = null;
+    for (const [id, value] of cost) {
+      if (!settled.has(id) && (current === null || value < cost.get(current)!)) current = id;
+    }
+    if (current === null) break;
+    settled.add(current);
     for (const link of childrenOf(current)) {
-      if (!via.has(link.to)) {
+      const next = cost.get(current)! + (link.common ? 1 : 3);
+      if (!cost.has(link.to) || next < cost.get(link.to)!) {
+        cost.set(link.to, next);
         via.set(link.to, current);
-        queue.push(link.to);
       }
     }
   }

@@ -62,6 +62,22 @@ describe("buildMindMap", () => {
     ]);
   });
 
+  it("prefers the usual route over a shorter uncommon one", () => {
+    const shortcut = buildMindMap(
+      new V2Graph({
+        ...snapshot,
+        edges: [...snapshot.edges, edge("exam:entrance", "job_role:developer", "exam_gate", false)],
+      }),
+    );
+    const index = new Map<string, MindNode>(shortcut.nodes.map((item) => [item.id, item]));
+    expect(routeTo(index, "job_role:developer")).toEqual([
+      ROOT,
+      "stream:commerce",
+      "degree:bca",
+      "job_role:developer",
+    ]);
+  });
+
   it("finds a shortest route from the root and flags unreachable nodes", () => {
     expect(routeTo(byId, "job_role:developer")).toEqual([
       ROOT,

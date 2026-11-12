@@ -108,8 +108,10 @@ class UsefulLink(StrictFactsModel):
 
 
 class EnrichmentProvenance(StrictFactsModel):
-    model: Literal["gpt-5.6-terra"]
-    prompt_version: Literal["v2-enrichment-1"]
+    # "claude-fable-5-2" / "v2-manual-1" marks guides written by hand outside the
+    # automated enrichment run (see pipeline/manual/); they are not pipeline output.
+    model: Literal["gpt-5.6-terra", "claude-fable-5-2"]
+    prompt_version: Literal["v2-enrichment-1", "v2-manual-1"]
     generated_at: str
 
     @field_validator("generated_at")
