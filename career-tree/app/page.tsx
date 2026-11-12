@@ -68,6 +68,12 @@ export default async function Home() {
             >
               Search for a career
             </Link>
+            <Link
+              href="/mindmap"
+              className="rounded-lg border border-black bg-white px-6 py-3 font-mono text-sm transition hover:bg-neutral-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2"
+            >
+              Open the mind map
+            </Link>
           </div>
           <div className="flex items-center gap-6 rounded-full border border-gray-200 bg-white/70 px-6 py-2 font-mono text-xs text-gray-500 backdrop-blur-sm">
             <span><strong className="text-black">{stats.suggestions}</strong> paths added</span>

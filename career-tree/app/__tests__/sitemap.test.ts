@@ -33,6 +33,7 @@ describe("sitemap", () => {
     expect(urls).toEqual(expect.arrayContaining([
       expect.stringMatching(/\/$/),
       expect.stringMatching(/\/map$/),
+      expect.stringMatching(/\/mindmap$/),
       expect.stringMatching(/\/search$/),
       expect.stringMatching(/\/about$/),
       expect.stringMatching(/\/careers\/school_stage\/class-10$/),
