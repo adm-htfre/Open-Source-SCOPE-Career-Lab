@@ -1,6 +1,15 @@
 import { describe, expect, it } from "vitest";
 import { V2Graph } from "../graph-core";
-import { buildMindMap, layoutMindMap, pathKey, routeTo, shortTitle, type MindNode } from "../mind-map";
+import {
+  buildMindMap,
+  layoutMindMap,
+  layoutWholeMap,
+  pathKey,
+  routeTo,
+  shortTitle,
+  WHOLE_MAP_SIZES,
+  type MindNode,
+} from "../mind-map";
 import type { V2Edge, V2EdgeType, V2GraphSnapshot, V2Node, V2NodeType } from "../types";
 
 const prov = { model: "fixture", prompt_version: "v2", generated_at: "2026-07-19", source_urls: [] };
@@ -152,5 +161,30 @@ describe("shortTitle", () => {
     expect(shortTitle("B.Tech (Bachelor of Technology)")).toBe("B.Tech");
     expect(shortTitle("Science Stream — PCM (Physics, Chemistry, Maths)")).toBe("Science Stream — PCM");
     expect(shortTitle("JEE Main")).toBe("JEE Main");
+  });
+});
+
+describe("layoutWholeMap", () => {
+  const whole = layoutWholeMap(byId, ROOT);
+
+  it("shows every reachable stop exactly once", () => {
+    const reachable = model.nodes.filter((item) => item.reachable).map((item) => item.id).sort();
+    expect(whole.nodes.map((item) => item.id).sort()).toEqual(reachable);
+    expect(whole.links).toHaveLength(reachable.length - 1);
+  });
+
+  it("keys each stop by its usual route", () => {
+    const developer = whole.nodes.find((item) => item.id === "job_role:developer")!;
+    expect(developer.key).toBe(pathKey(routeTo(byId, "job_role:developer")));
+  });
+
+  it("keeps bubbles on the same ring apart", () => {
+    for (const a of whole.nodes) {
+      for (const b of whole.nodes) {
+        if (a !== b && a.depth === b.depth) {
+          expect(Math.hypot(a.x - b.x, a.y - b.y)).toBeGreaterThanOrEqual(WHOLE_MAP_SIZES.spacing - 0.01);
+        }
+      }
+    }
   });
 });

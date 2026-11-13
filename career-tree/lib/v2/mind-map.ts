@@ -335,3 +335,160 @@ export function shortTitle(title: string): string {
   const trimmed = title.replace(/\s*\([^()]*\)\s*$/, "").trim();
   return trimmed.length >= 3 ? trimmed : title;
 }
+
+export const WHOLE_MAP_SIZES = {
+  root: 148,
+  branch: 84,
+  leaf: 64,
+  /** Room one bubble and its label need along a ring. */
+  spacing: 104,
+  /** Smallest distance between two rings. */
+  ringGap: 230,
+  /** A crowded ring is split into an inner and an outer row this far apart. */
+  stagger: 130,
+};
+
+/**
+ * Every stop on the map at once: each node appears once, on its usual route
+ * from the root (`via`), laid out as a radial tree. Each branch gets a slice
+ * of the circle in proportion to the number of end points it holds, and each
+ * ring is pushed out until neighbouring bubbles on it have room for their
+ * labels. A crowded ring alternates its bubbles between two rows, which
+ * roughly halves how far out it has to go. Keys are the root-to-node path, as
+ * in `layoutMindMap`.
+ */
+export function layoutWholeMap(byId: Map<string, MindNode>, rootId: string): MindLayout {
+  const nodes: LaidNode[] = [];
+  const links: LaidLink[] = [];
+  const half = WHOLE_MAP_SIZES.root / 2;
+  const bounds = { minX: -half, maxX: half, minY: -half, maxY: half };
+  if (!byId.has(rootId)) return { nodes, links, bounds };
+
+  const kids = (id: string): MindLink[] =>
+    byId.get(id)!.children.filter((link) => byId.get(link.to)?.via === id);
+
+  // Leaves under each node, and the angle slice each node will get.
+  const leaves = new Map<string, number>();
+  const countLeaves = (id: string): number => {
+    const own = kids(id);
+    const total = own.length === 0 ? 1 : own.reduce((sum, link) => sum + countLeaves(link.to), 0);
+    leaves.set(id, total);
+    return total;
+  };
+  // First-ring branches get at least a minimum slice, so small ones (a single
+  // exam, say) don't crowd together with their names on top of each other.
+  const totalLeaves = countLeaves(rootId);
+  const firstRing = kids(rootId);
+  const minSlice = totalLeaves / Math.max(firstRing.length * 1.5, 1);
+  const weight = new Map<string, number>(leaves);
+  for (const link of firstRing) {
+    weight.set(link.to, Math.max(leaves.get(link.to)!, minSlice));
+  }
+  weight.set(rootId, firstRing.reduce((sum, link) => sum + weight.get(link.to)!, 0) || 1);
+  const unit = (2 * Math.PI) / weight.get(rootId)!;
+
+  type Placed = { ids: string[]; angle: number; edge: MindLink | null; childCount: number };
+  const rings: Placed[][] = [];
+  const place = (ids: string[], start: number, edge: MindLink | null) => {
+    const id = ids[ids.length - 1];
+    const depth = ids.length - 1;
+    const own = kids(id);
+    (rings[depth] ??= []).push({
+      ids,
+      angle: start + (weight.get(id)! * unit) / 2,
+      edge,
+      childCount: own.length,
+    });
+    const used = own.reduce((sum, link) => sum + weight.get(link.to)!, 0);
+    let cursor = start + ((weight.get(id)! - used) * unit) / 2;
+    for (const link of own) {
+      place([...ids, link.to], cursor, link);
+      cursor += weight.get(link.to)! * unit;
+    }
+  };
+  place([rootId], -Math.PI / 2 - (weight.get(rootId)! * unit) / 2, null);
+
+  // Ring radius: far enough out that the closest two bubbles in a row don't
+  // touch. `outer` marks the bubbles moved to a crowded ring's second row.
+  const { spacing, ringGap, stagger } = WHOLE_MAP_SIZES;
+  const chord = (angle: number) => spacing / (2 * Math.sin(Math.min(angle, Math.PI) / 2));
+  const radii = [0];
+  const extra = [0];
+  const outer = new Set<Placed>();
+  for (let depth = 1; depth < rings.length; depth += 1) {
+    const ring = [...rings[depth]].sort((a, b) => a.angle - b.angle);
+    const gaps = ring.map((item, index) =>
+      index + 1 < ring.length
+        ? ring[index + 1].angle - item.angle
+        : ring[0].angle + 2 * Math.PI - item.angle,
+    );
+    const inward = radii[depth - 1] + extra[depth - 1] + ringGap;
+    const single = ring.length > 1 ? chord(Math.min(...gaps)) : 0;
+    if (single <= inward || ring.length < 4) {
+      radii.push(Math.max(inward, single));
+      extra.push(0);
+      continue;
+    }
+    // Two rows: bubbles in the same row are two steps apart.
+    const pairs = gaps.map((gap, index) => gap + gaps[(index + 1) % gaps.length]);
+    radii.push(Math.max(inward, chord(Math.min(...pairs))));
+    extra.push(stagger);
+    ring.forEach((item, index) => {
+      if (index % 2 === 1) outer.add(item);
+    });
+  }
+
+  // Spread the inner rings out in proportion to the outer one, so the first
+  // few rings aren't bunched up around the root when the map is seen whole.
+  const last = radii.length - 1;
+  const outerRadius = radii[last];
+  for (let depth = 1; depth <= last; depth += 1) {
+    radii[depth] = Math.max(
+      radii[depth],
+      outerRadius * Math.pow(depth / last, 0.35) * 0.9,
+      radii[depth - 1] + extra[depth - 1] + ringGap,
+    );
+  }
+
+  const laidByKey = new Map<string, LaidNode>();
+  rings.forEach((ring, depth) => {
+    for (const item of ring) {
+      const key = pathKey(item.ids);
+      const size =
+        depth === 0 ? WHOLE_MAP_SIZES.root : depth === 1 ? WHOLE_MAP_SIZES.branch : WHOLE_MAP_SIZES.leaf;
+      const laid: LaidNode = {
+        key,
+        id: item.ids[depth],
+        parentKey: depth === 0 ? null : pathKey(item.ids.slice(0, -1)),
+        depth,
+        x: Math.cos(item.angle) * (radii[depth] + (outer.has(item) ? extra[depth] : 0)),
+        y: Math.sin(item.angle) * (radii[depth] + (outer.has(item) ? extra[depth] : 0)),
+        size,
+        angle: item.angle,
+        childCount: item.childCount,
+        expanded: item.childCount > 0,
+      };
+      laidByKey.set(key, laid);
+      nodes.push(laid);
+      bounds.minX = Math.min(bounds.minX, laid.x - size / 2);
+      bounds.maxX = Math.max(bounds.maxX, laid.x + size / 2);
+      bounds.minY = Math.min(bounds.minY, laid.y - size / 2);
+      bounds.maxY = Math.max(bounds.maxY, laid.y + size / 2);
+      if (laid.parentKey && item.edge) {
+        const parent = laidByKey.get(laid.parentKey)!;
+        links.push({
+          key: `${parent.key}${PATH_SEPARATOR}>${laid.id}`,
+          fromKey: parent.key,
+          toKey: key,
+          edgeType: item.edge.edgeType,
+          common: item.edge.common,
+          x1: parent.x,
+          y1: parent.y,
+          x2: laid.x,
+          y2: laid.y,
+        });
+      }
+    }
+  });
+  return { nodes, links, bounds };
+}

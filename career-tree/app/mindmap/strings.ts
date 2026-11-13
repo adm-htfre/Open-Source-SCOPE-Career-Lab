@@ -18,6 +18,10 @@ interface Strings {
   zoomIn: string;
   zoomOut: string;
   reset: string;
+  expandAll: string;
+  collapseAll: string;
+  allHintBefore: string;
+  allHintAfter: string;
   close: string;
   nextSteps: string;
   endOfRoute: string;
@@ -48,6 +52,10 @@ export const STRINGS: Record<Lang, Strings> = {
     zoomIn: "Zoom in",
     zoomOut: "Zoom out",
     reset: "Start again",
+    expandAll: "Expand all",
+    collapseAll: "Collapse",
+    allHintBefore: "Showing all ",
+    allHintAfter: " stops, each on its usual route. Zoom in to read the names.",
     close: "Close",
     nextSteps: "next steps",
     endOfRoute: "End of this route",
@@ -76,6 +84,10 @@ export const STRINGS: Record<Lang, Strings> = {
     zoomIn: "मोठे करा",
     zoomOut: "लहान करा",
     reset: "पुन्हा सुरू करा",
+    expandAll: "सर्व उघडा",
+    collapseAll: "मिटवा",
+    allHintBefore: "सर्व ",
+    allHintAfter: " टप्पे दाखवले आहेत, प्रत्येक त्याच्या नेहमीच्या वाटेवर. नावे वाचण्यासाठी मोठे करा.",
     close: "बंद करा",
     nextSteps: "पुढचे टप्पे",
     endOfRoute: "या वाटेचा शेवट",

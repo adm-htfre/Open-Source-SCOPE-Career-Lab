@@ -8,10 +8,12 @@ import {
   useRef,
   useState,
   useSyncExternalStore,
+  type CSSProperties,
   type PointerEvent as ReactPointerEvent,
 } from "react";
 import {
   layoutMindMap,
+  layoutWholeMap,
   MIND_SIZES,
   PATH_SEPARATOR,
   pathIds,
@@ -44,7 +46,9 @@ const TYPE_GROUP: Record<V2NodeType, TypeGroup> = {
 };
 const GROUPS: TypeGroup[] = ["start", "study", "exam", "work"];
 
-const MIN_ZOOM = 0.3;
+const MIN_ZOOM = 0.04;
+/** Below this zoom, labels are too small to read and are hidden. */
+const FAR_ZOOM = 0.38;
 const MAX_ZOOM = 2;
 const LANG_KEY = "career-tree-mindmap-lang";
 const LANG_EVENT = "career-tree-mindmap-lang";
@@ -117,6 +121,8 @@ export default function MindMapView({ model }: { model: MindMapModel }) {
   const [view, setView] = useState<View | null>(null);
   const [gliding, setGliding] = useState(true);
   const [query, setQuery] = useState("");
+  // "Show all": every stop at once, each on its usual route.
+  const [showAll, setShowAll] = useState(false);
 
   // Nudge the map right and down a little so it clears the header card.
   const homeView = useMemo<View>(
@@ -130,10 +136,13 @@ export default function MindMapView({ model }: { model: MindMapModel }) {
   );
   const current = view ?? homeView;
 
-  const layout = useMemo(
-    () => layoutMindMap(byId, rootId, expanded, shape),
-    [byId, rootId, expanded, shape],
+  const wholeMap = useMemo(() => layoutWholeMap(byId, rootId), [byId, rootId]);
+  const layoutFor = useCallback(
+    (nextExpanded: ReadonlySet<string>, all: boolean) =>
+      all ? wholeMap : layoutMindMap(byId, rootId, nextExpanded, shape),
+    [byId, rootId, shape, wholeMap],
   );
+  const layout = useMemo(() => layoutFor(expanded, showAll), [layoutFor, expanded, showAll]);
 
   const num = useCallback(
     (value: number) => value.toLocaleString(lang === "mr" ? "mr-IN-u-nu-deva" : "en-IN"),
@@ -145,8 +154,8 @@ export default function MindMapView({ model }: { model: MindMapModel }) {
   );
 
   const focusOn = useCallback(
-    (key: string, nextExpanded: ReadonlySet<string>) => {
-      const next = layoutMindMap(byId, rootId, nextExpanded, shape);
+    (key: string, nextExpanded: ReadonlySet<string>, all = false) => {
+      const next = layoutFor(nextExpanded, all);
       const node = next.nodes.find((item) => item.key === key);
       if (!node) return;
       let cx = node.x;
@@ -154,7 +163,7 @@ export default function MindMapView({ model }: { model: MindMapModel }) {
       if (node.depth === 0) {
         cx = homeView.cx;
         cy = homeView.cy;
-      } else if (node.expanded) {
+      } else if (node.expanded && !all) {
         // Look ahead of an opened bubble, towards its children.
         cx += Math.cos(node.angle) * MIND_SIZES.fanRadius * 0.55;
         cy += Math.sin(node.angle) * MIND_SIZES.fanRadius * 0.55;
@@ -165,20 +174,20 @@ export default function MindMapView({ model }: { model: MindMapModel }) {
         return { cx, cy, k: base.k < 0.6 ? 0.85 : base.k };
       });
     },
-    [byId, rootId, shape, homeView],
+    [layoutFor, homeView],
   );
 
-  /** Select a card; `toggle` lets a second tap on the selected card fold it. */
-  const open = useCallback(
-    (key: string, toggle: boolean) => {
+  /** Open a branch in the one-branch view, selecting `key`. */
+  const openBranch = useCallback(
+    (key: string, toggle: boolean, base: ReadonlySet<string>, wasSelected: string | null) => {
       const ids = pathIds(key);
       const node = byId.get(ids[ids.length - 1]);
       if (!node) return;
       const hasChildren = node.children.some((link) => !ids.includes(link.to));
       const inside = `${key}${PATH_SEPARATOR}`;
-      const folding = toggle && selected === key && expanded.has(key);
+      const folding = toggle && wasSelected === key && base.has(key);
       const next = new Set<string>();
-      for (const item of expanded) {
+      for (const item of base) {
         const onThisBranch = key.startsWith(`${item}${PATH_SEPARATOR}`) || item === key || item.startsWith(inside);
         // One branch at a time: opening a bubble folds the others.
         if (onThisBranch) next.add(item);
@@ -197,10 +206,56 @@ export default function MindMapView({ model }: { model: MindMapModel }) {
       setSelected(key);
       focusOn(key, next);
     },
-    [byId, expanded, focusOn, selected],
+    [byId, focusOn],
   );
 
+  /** Select a card; `toggle` lets a second tap on the selected card fold it. */
+  const open = useCallback(
+    (key: string, toggle: boolean) => {
+      if (!showAll) {
+        openBranch(key, toggle, expanded, selected);
+        return;
+      }
+      // Every stop is already showing, once, on its usual route: go to it.
+      const ids = pathIds(key);
+      const route = routeTo(byId, ids[ids.length - 1]);
+      if (route.length === 0) return;
+      const routeKey = pathKey(route);
+      setSelected(routeKey);
+      focusOn(routeKey, expanded, true);
+    },
+    [byId, expanded, focusOn, openBranch, selected, showAll],
+  );
+
+  const toggleShowAll = useCallback(() => {
+    setGliding(true);
+    if (showAll) {
+      setShowAll(false);
+      if (selected) {
+        openBranch(selected, false, new Set(), null);
+      } else {
+        setExpanded(new Set());
+        setView(null);
+      }
+      return;
+    }
+    setShowAll(true);
+    if (selected) {
+      const ids = pathIds(selected);
+      const route = routeTo(byId, ids[ids.length - 1]);
+      setSelected(route.length ? pathKey(route) : null);
+    }
+    // Fit the whole map in the space the cards leave free.
+    const box = viewportRef.current?.getBoundingClientRect();
+    const width = Math.max((box?.width ?? 1200) - (narrow ? 20 : 120), 200);
+    const height = Math.max((box?.height ?? 800) - (narrow ? 160 : 80), 200);
+    const { minX, maxX, minY, maxY } = wholeMap.bounds;
+    const k = clampZoom(Math.min(width / (maxX - minX), height / (maxY - minY)));
+    setView({ cx: (minX + maxX) / 2, cy: (minY + maxY) / 2, k });
+  }, [byId, narrow, openBranch, selected, showAll, wholeMap]);
+
   const reset = useCallback(() => {
+    setShowAll(false);
     setExpanded(new Set());
     setSelected(null);
     setGliding(true);
@@ -357,7 +412,7 @@ export default function MindMapView({ model }: { model: MindMapModel }) {
 
   return (
     <div
-      className="mm"
+      className={`mm${showAll ? " mm-all" : ""}`}
       lang={lang === "mr" ? "mr" : "en"}
       data-lang={lang}
       data-detail={selectedNode ? "open" : undefined}
@@ -372,10 +427,13 @@ export default function MindMapView({ model }: { model: MindMapModel }) {
       >
         <div
           ref={worldRef}
-          className={`mm-world${gliding ? " mm-gliding" : ""}`}
-          style={{
-            transform: `scale(${current.k}) translate(${-current.cx}px, ${-current.cy}px)`,
-          }}
+          className={`mm-world${gliding ? " mm-gliding" : ""}${current.k < FAR_ZOOM ? " mm-far" : ""}`}
+          style={
+            {
+              transform: `scale(${current.k}) translate(${-current.cx}px, ${-current.cy}px)`,
+              "--inv-zoom": 1 / current.k,
+            } as CSSProperties
+          }
         >
           <svg className="mm-links" aria-hidden="true" width="1" height="1">
             {layout.links.map((link) => (
@@ -493,7 +551,9 @@ export default function MindMapView({ model }: { model: MindMapModel }) {
             </ul>
           )}
         </div>
-        <p className="mm-hint">{t.hint}</p>
+        <p className="mm-hint">
+          {showAll ? `${t.allHintBefore}${num(wholeMap.nodes.length)}${t.allHintAfter}` : t.hint}
+        </p>
       </header>
 
       <div className="mm-legend" aria-label={t.legend}>
@@ -518,6 +578,14 @@ export default function MindMapView({ model }: { model: MindMapModel }) {
       </div>
 
       <div className="mm-tools">
+        <button
+          type="button"
+          className={`mm-tool mm-tool-wide${showAll ? " mm-tool-on" : ""}`}
+          aria-pressed={showAll}
+          onClick={toggleShowAll}
+        >
+          {showAll ? t.collapseAll : t.expandAll}
+        </button>
         <button type="button" className="mm-tool" onClick={() => zoomBy(1.25)} aria-label={t.zoomIn}>
           +
         </button>

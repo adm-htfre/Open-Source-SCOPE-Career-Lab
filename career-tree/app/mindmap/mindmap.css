@@ -869,6 +869,50 @@
   }
 }
 
+/* ---- expand all ----------------------------------------------------------- */
+
+.mm-all .mm-node-title {
+  max-width: 100px;
+  font-size: 11px;
+}
+.mm-all .mm-depth-1 .mm-node-title {
+  max-width: 120px;
+  font-size: 12.5px;
+}
+/* Zoomed far out: names would be unreadable specks. Bubbles grow into
+   coloured dots, links thicken, and only the first ring keeps its names,
+   drawn at a readable size, so the overview still shows where each branch is. */
+.mm-far .mm-node-title,
+.mm-far .mm-node-count {
+  visibility: hidden;
+}
+.mm-far .mm-bubble {
+  transform: scale(min(3, calc(var(--inv-zoom) * 0.16)));
+}
+.mm-far :is(.mm-depth-0, .mm-depth-1) .mm-bubble {
+  transform: scale(min(5, calc(var(--inv-zoom) * 0.3)));
+}
+.mm-far .mm-node:hover .mm-bubble {
+  transform: scale(min(4, calc(var(--inv-zoom) * 0.22)));
+}
+.mm-far .mm-depth-1 .mm-node-title {
+  visibility: visible;
+  top: 50%;
+  max-width: 116px;
+  transform-origin: 50% 0;
+  transform: translate(-50%, min(250px, calc(var(--inv-zoom) * 26px)))
+    scale(min(16, calc(var(--inv-zoom) * 0.9)));
+}
+.mm-far .mm-link {
+  stroke-width: min(14, calc(var(--inv-zoom) * 0.22));
+}
+.mm-far .mm-link-active {
+  stroke-width: min(40, calc(var(--inv-zoom) * 0.6));
+}
+.mm-all .mm-node {
+  animation-duration: 0.3s;
+}
+
 @keyframes mm-fade {
   from { opacity: 0; }
 }
