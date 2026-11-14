@@ -17,6 +17,9 @@ rm -rf app/api app/og
 for f in app/page.tsx "app/careers/[type]/[slug]/page.tsx" "app/explore/[type]/[slug]/page.tsx"; do
   sed -i -E '/^export const revalidate = /d; s/^export const dynamicParams = true;/export const dynamicParams = false;/' "$f"
 done
+for f in app/manifest.ts app/robots.ts app/sitemap.ts; do
+  printf '\nexport const dynamic = "force-static";\n' >> "$f"
+done
 sed -i -E 's/^const PRERENDER_LIMIT = [0-9]+;/const PRERENDER_LIMIT = Number.MAX_SAFE_INTEGER;/' lib/v2/prerender.ts
 
 # Plain (non-next/link) paths to files in public/ need the base path.
