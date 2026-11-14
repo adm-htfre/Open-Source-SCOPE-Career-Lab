@@ -869,6 +869,120 @@
   }
 }
 
+/* ---- pay and difficulty ---------------------------------------------------- */
+
+.mm-out {
+  display: grid;
+  gap: 10px;
+  margin: 14px 0 4px;
+}
+.mm-out-block {
+  padding: 10px 12px;
+  border: 1.5px solid var(--ink);
+  border-radius: 8px;
+  background: var(--paper-hi);
+}
+.mm-out-label {
+  margin: 0 0 4px;
+  font-family: var(--caps);
+  font-weight: 800;
+  font-size: 9.5px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.mm[data-lang="mr"] .mm-out-label {
+  font-size: 12.5px;
+  letter-spacing: 0;
+  text-transform: none;
+}
+.mm-out-figure-line {
+  margin: 0;
+}
+.mm-out-figure {
+  margin: 0;
+  display: inline;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.2;
+  font-variant-numeric: tabular-nums;
+}
+.mm-out-figure,
+.mm-out-steps strong {
+  background-image: linear-gradient(transparent 62%, color-mix(in srgb, var(--hl) 70%, transparent) 62%);
+}
+.mm-out-meta,
+.mm-out-meta-inline {
+  margin: 2px 0 0;
+  font-size: 12.5px;
+  line-height: 1.35;
+  color: var(--muted);
+}
+.mm-out-text {
+  margin: 4px 0 0;
+  font-size: 13.5px;
+  line-height: 1.4;
+}
+.mm-out-none {
+  margin: 0;
+  font-size: 13.5px;
+  font-style: italic;
+  color: var(--muted);
+}
+.mm-out-steps,
+.mm-out-reasons {
+  margin: 0;
+  padding: 0 0 0 16px;
+  font-size: 13.5px;
+  line-height: 1.45;
+}
+.mm-out-reasons {
+  margin-top: 4px;
+  color: var(--ink);
+}
+.mm-out-sources a {
+  margin-right: 6px;
+  color: var(--blue);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.mm-out-link {
+  padding: 0;
+  background: none;
+  border: 0;
+  color: var(--blue);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.mm-out-effort {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+}
+.mm-out-dots {
+  display: inline-flex;
+  gap: 4px;
+}
+.mm-out-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1.5px solid var(--ink);
+  background: transparent;
+}
+.mm-out-dot-on {
+  background: var(--red);
+}
+.mm-out-note {
+  margin: 6px 0 0;
+  font-size: 11.5px;
+  font-style: italic;
+  line-height: 1.35;
+  color: var(--muted);
+}
+
 /* ---- expand all ----------------------------------------------------------- */
 
 .mm-all .mm-node-title {

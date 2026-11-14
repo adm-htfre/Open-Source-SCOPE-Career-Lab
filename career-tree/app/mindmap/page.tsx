@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Archivo, Mukta, Source_Serif_4, Tiro_Devanagari_Marathi } from "next/font/google";
 import { v2Graph } from "@/lib/v2/data";
+import outlookFile from "@/data/v2/job-outlook.json";
+import { buildOutlook, type OutlookFile } from "@/lib/v2/job-outlook";
 import { buildMindMap } from "@/lib/v2/mind-map";
 import MindMapView from "./MindMapView";
 import "./mindmap.css";
@@ -35,11 +37,13 @@ export const metadata: Metadata = {
 };
 
 export default function MindMapPage() {
+  const model = buildMindMap(v2Graph);
+  const outlook = buildOutlook(v2Graph, model.nodes, outlookFile as unknown as OutlookFile);
   return (
     <div
       className={`${serif.variable} ${caps.variable} ${marathiSerif.variable} ${marathiSans.variable}`}
     >
-      <MindMapView model={buildMindMap(v2Graph)} />
+      <MindMapView model={model} outlook={outlook} />
     </div>
   );
 }

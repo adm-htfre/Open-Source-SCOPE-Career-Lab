@@ -26,6 +26,8 @@ import {
   type MindNode,
 } from "@/lib/v2/mind-map";
 import type { V2NodeType } from "@/lib/v2/types";
+import type { NodeOutlook } from "@/lib/v2/job-outlook";
+import OutlookPanel from "./OutlookPanel";
 import { NodeIcon } from "./icons";
 import { MARATHI_TITLES, STRINGS, TYPE_LABELS, type Lang } from "./strings";
 
@@ -92,7 +94,13 @@ function subscribeMedia(query: string) {
 const subscribeNarrow = subscribeMedia(NARROW_QUERY);
 const subscribeCompact = subscribeMedia(COMPACT_QUERY);
 
-export default function MindMapView({ model }: { model: MindMapModel }) {
+export default function MindMapView({
+  model,
+  outlook = {},
+}: {
+  model: MindMapModel;
+  outlook?: Record<string, NodeOutlook>;
+}) {
   const byId = useMemo(
     () => new Map<string, MindNode>(model.nodes.map((node) => [node.id, node])),
     [model.nodes],
@@ -631,6 +639,16 @@ export default function MindMapView({ model }: { model: MindMapModel }) {
               </span>
             )}
           </div>
+          {outlook[selectedNode.id] && (
+            <OutlookPanel
+              outlook={outlook[selectedNode.id]}
+              lang={lang}
+              onOpen={(id) => {
+                const index = selectedIds.indexOf(id);
+                open(pathKey(index >= 0 ? selectedIds.slice(0, index + 1) : [...selectedIds, id]), false);
+              }}
+            />
+          )}
           {nextLinks.length > 0 && (
             <ul className="mm-next" aria-label={t.nextSteps}>
               {nextLinks.map((link) => {

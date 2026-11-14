@@ -146,3 +146,105 @@ export const MARATHI_TITLES: Record<string, string> = {
   "exam:ssc-gd": "एसएससी जीडी कॉन्स्टेबल",
   "exam:ssc-mts-exam": "एसएससी एमटीएस परीक्षा",
 };
+
+interface OutlookStrings {
+  heading: string;
+  pay: string;
+  growth: string;
+  effort: string;
+  perMonth: string;
+  perYear: string;
+  lakh: string;
+  basicPay: string;
+  startingBasic: string;
+  levelGrowth: string;
+  source: string;
+  noPay: string;
+  noGrowth: string;
+  nextStep: string;
+  levels: [string, string, string, string, string];
+  noCourse: string;
+  oneCourse: string;
+  manyCourses: string;
+  examOnWay: string;
+  veryCompetitive: string;
+  experience: string;
+  oneIn: string;
+  applicantsSelected: string;
+  passed: string;
+  ratingNote: string;
+  kinds: Record<"level" | "rule" | "notice" | "employer" | "ncs" | "aggregator", string>;
+}
+
+export const OUTLOOK_STRINGS: Record<Lang, OutlookStrings> = {
+  en: {
+    heading: "Pay and difficulty",
+    pay: "Pay",
+    growth: "Pay growth",
+    effort: "How hard to get in",
+    perMonth: "a month",
+    perYear: "a year",
+    lakh: "lakh",
+    basicPay: "before allowances",
+    startingBasic: "Starting basic pay, Pay Level",
+    levelGrowth: "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    source: "source",
+    noPay: "No reliable published figure yet.",
+    noGrowth: "No published figure for later pay.",
+    nextStep: "Usual next step,",
+    levels: ["Easier", "Moderate", "Demanding", "Hard", "Very hard"],
+    noCourse: "No college course needed on the usual route",
+    oneCourse: "One college course on the usual route",
+    manyCourses: "Two or more college courses on the usual route",
+    examOnWay: "An entrance or qualifying exam on the way",
+    veryCompetitive: "A very competitive exam: fewer than 1 in 200 applicants selected",
+    experience: "Needs work experience in another job first",
+    oneIn: "1 in",
+    applicantsSelected: "applicants selected",
+    passed: "passed",
+    ratingNote: "A guide, not an official rating: worked out from the usual route on this map and published exam figures.",
+    kinds: {
+      level: "Central government pay rules",
+      rule: "Official pay rules",
+      notice: "Public employer's notice",
+      employer: "Employer's published terms",
+      ncs: "National Career Service indicative range",
+      aggregator: "Salary-survey website estimate",
+    },
+  },
+  mr: {
+    heading: "पगार आणि अवघडपणा",
+    pay: "पगार",
+    growth: "पगारवाढ",
+    effort: "मिळवणे किती अवघड",
+    perMonth: "दरमहा",
+    perYear: "दरवर्षी",
+    lakh: "लाख",
+    basicPay: "भत्त्यांशिवाय",
+    startingBasic: "सुरुवातीचे मूळ वेतन, वेतन स्तर",
+    levelGrowth: "दरवर्षी ३% वेतनवाढ मिळते, आणि बढतीनंतर वरच्या वेतन स्तरावर जाता येते.",
+    source: "स्रोत",
+    noPay: "अजून विश्वसनीय प्रकाशित आकडा नाही.",
+    noGrowth: "पुढील पगाराचा प्रकाशित आकडा नाही.",
+    nextStep: "नेहमीचा पुढचा टप्पा,",
+    levels: ["सोपे", "मध्यम", "मेहनतीचे", "कठीण", "खूप कठीण"],
+    noCourse: "नेहमीच्या वाटेवर महाविद्यालयीन अभ्यासक्रम लागत नाही",
+    oneCourse: "नेहमीच्या वाटेवर एक महाविद्यालयीन अभ्यासक्रम",
+    manyCourses: "नेहमीच्या वाटेवर दोन किंवा अधिक अभ्यासक्रम",
+    examOnWay: "वाटेत प्रवेश किंवा पात्रता परीक्षा",
+    veryCompetitive: "खूप स्पर्धात्मक परीक्षा: २०० अर्जदारांपैकी एकापेक्षा कमी निवडले जातात",
+    experience: "आधी दुसऱ्या नोकरीचा अनुभव लागतो",
+    oneIn: "",
+    applicantsSelected: "अर्जदारांपैकी एक निवडला गेला",
+    passed: "उत्तीर्ण",
+    ratingNote: "हे मार्गदर्शन आहे, अधिकृत मूल्यांकन नाही: या नकाशावरील नेहमीची वाट आणि प्रकाशित परीक्षा-आकड्यांवरून काढलेले.",
+    kinds: {
+      level: "केंद्र सरकारचे वेतन नियम",
+      rule: "अधिकृत वेतन नियम",
+      notice: "सार्वजनिक नियोक्त्याची सूचना",
+      employer: "नियोक्त्याच्या प्रकाशित अटी",
+      ncs: "नॅशनल करिअर सर्व्हिसचा अंदाजित पगार",
+      aggregator: "पगार-सर्वेक्षण संकेतस्थळाचा अंदाज",
+    },
+  },
+};

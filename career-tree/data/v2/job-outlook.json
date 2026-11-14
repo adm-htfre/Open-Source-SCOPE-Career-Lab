@@ -1,0 +1,3589 @@
+{
+ "generatedAt": "2026-11-13",
+ "pay": {
+  "government_service:accounts-clerk-cum-typist-in-indian-railways": {
+   "asOf": "2025",
+   "quote": "In CEN 07/2025 context, Accounts Clerk cum Typist was notified at 7th CPC Pay Level 2 with initial basic pay of ₹19,900.",
+   "sources": [
+    "https://www.rrbcdg.gov.in/2025-07-ntpcug.php",
+    "https://rrbbilaspur.gov.in/eng/index.html",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "2",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 2",
+     "min": 19900,
+     "max": 19900,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:administrative-assistant-b-drdo": {
+   "asOf": "2024",
+   "quote": "A February 2024 Gazette recruitment rule names Administrative Assistant ‘B’ as a Level 4 post in the Central Pay Matrix (₹25,500–81,100 basic-pay range).",
+   "sources": [
+    "https://egazette.gov.in/WriteReadData/2024/252154.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "4",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 4",
+     "min": 25500,
+     "max": 25500,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:assistant-commandant-in-central-industrial-security-force": {
+   "asOf": "2026",
+   "quote": "A CISF notice for Assistant Commandant/Fire describes the post as revised Pay Level 10, with the 7th CPC matrix range of ₹56,100–₹1,77,500.",
+   "sources": [
+    "https://www.cisf.gov.in/assets/pdfs/2025/07/1014_1.pdf",
+    "https://doe.gov.in/order-central-pay-commission/16",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "10",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 10",
+     "min": 56100,
+     "max": 56100,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:assistant-commandant-in-central-reserve-police-force": {
+   "asOf": "2026",
+   "quote": "The Seventh Central Pay Commission’s Level 10 entry-pay example is ₹56,100 basic pay; actual monthly earnings depend on prevailing allowances, posting, deductions, and pay rules.",
+   "sources": [
+    "https://www.mha.gov.in/sites/default/files/VacanciesCAPF_22032024.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7cpc_report_eng.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "10",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 10",
+     "min": 56100,
+     "max": 56100,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:assistant-commandant-in-indo-tibetan-border-police": {
+   "asOf": "2018",
+   "quote": "The 2018 ITBP General Duty Group A recruitment rules list Assistant Commandant at Pay Matrix Level 10, ₹56,100–₹1,77,500.",
+   "sources": [
+    "https://www.itbpolice.nic.in/Home/DownloadRectRules/27",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "10",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 10",
+     "min": 56100,
+     "max": 56100,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:assistant-commandant-in-sashastra-seema-bal": {
+   "asOf": "2026",
+   "quote": "The Ministry of Home Affairs’ 2026 CAPF (AC) examination rules place Assistant Commandant in Level 10, junior scale, of the pay matrix: ₹56,100–₹177,500 basic-pay range.",
+   "sources": [
+    "https://egazette.gov.in/WriteReadData/2026/270395.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "10",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 10",
+     "min": 56100,
+     "max": 56100,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:assistant-drugs-controller": {
+   "asOf": "2024",
+   "quote": "The 2024 Medical Device Vertical rules place ADC(I) at Pay Level 11, ₹67,700–₹2,08,700 in the pay matrix.",
+   "sources": [
+    "https://cdsco.gov.in/opencms/resources/UploadCDSCOWeb/2024/RecruitmentFiles/gsr689e.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "11",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 11",
+     "min": 67700,
+     "max": 67700,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:assistant-engineer-central-government": {
+   "asOf": "2026",
+   "quote": "For example, the Central Water Commission’s Farakka Barrage Project describes Assistant Engineer (Civil) as a General Central Service Group ‘B’, Gazetted, Non-Ministerial post in Pay Matrix Level 7 (basic-pay range ₹44,900–₹1,42,400 under the 7th CPC matrix).",
+   "sources": [
+    "https://cwc.gov.in/en/file/26724/download?token=kJockJH6",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "7",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 7",
+     "min": 44900,
+     "max": 44900,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:assistant-executive-engineer-in-border-roads-engineering-service": {
+   "asOf": "2025",
+   "quote": "The Engineering Services Examination Rules notified on September 26, 2025 place both AEE (Civil) and AEE (E&M) in BRES at Pay Matrix Level 10.",
+   "sources": [
+    "https://egazette.gov.in/WriteReadData/2025/266577.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "10",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 10",
+     "min": 56100,
+     "max": 56100,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:assistant-executive-engineer-in-central-water-engineering-service": {
+   "asOf": "2024",
+   "quote": "A Ministry of Jal Shakti appointment offer dated September 19, 2024 states that JTS Assistant Director/Assistant Executive Engineer appointees would have pay fixed at Pay Matrix Level 10, ₹56,100–₹1,77,500 per month, plus admissible Central Government allowances.",
+   "sources": [
+    "https://cwc.gov.in/sites/default/files/ilovepdfmerged-26.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "10",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 10",
+     "min": 56100,
+     "max": 56100,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:assistant-executive-engineer-in-indian-defence-service-of-engineers": {
+   "asOf": "2026",
+   "quote": "The ESE 2026 Rules’ service particulars list Assistant Executive Engineer in the IDSE cadre at 7th CPC Pay Level 10, with basic-pay range ₹56,100–₹1,77,500.",
+   "sources": [
+    "https://egazette.gov.in/WriteReadData/2025/266577.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "10",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 10",
+     "min": 56100,
+     "max": 56100,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:assistant-loco-pilot-indian-railways": {
+   "asOf": "2026",
+   "quote": "For CEN 01/2026, ALP was listed at 7th CPC Pay Level 2 with initial basic pay of ₹19,900.",
+   "sources": [
+    "https://rrbbhopal.gov.in/2026/detail%20cen%2001%202026%20eng.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "2",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 2",
+     "min": 19900,
+     "max": 19900,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:assistant-section-officer-in-central-secretariat-service-css": {
+   "asOf": "2026",
+   "quote": "SSC’s CGL notice lists the Level 7 pay range as ₹44,900–₹1,42,400; actual monthly take-home pay varies with the applicable pay-matrix stage, allowances, deductions, posting, and rules in force.",
+   "sources": [
+    "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_cgl_2025.pdf",
+    "https://dopt.gov.in/sites/default/files/AR2022-23English.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "7",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 7",
+     "min": 44900,
+     "max": 44900,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:assistant-sub-inspector-in-capfs": {
+   "asOf": "2022",
+   "quote": "The ITBP 2022 rules place ASI (GD) at Pay Level 5, with the then-stated matrix range of ₹29,200–₹92,300.",
+   "sources": [
+    "https://www.itbpolice.nic.in/Home/DownloadRectRules/73",
+    "https://www.mha.gov.in/en/divisionofmha/police-ii-division",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "5",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 5",
+     "min": 29200,
+     "max": 29200,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:auditor-in-comptroller-and-auditor-general-cag": {
+   "asOf": "2026",
+   "quote": "As a dated reference point, the SSC CGL notice available for the 2026 eligibility cycle lists Auditor in Offices under C&AG at Pay Level 5, with the pay-matrix range ₹29,200–₹92,300.",
+   "sources": [
+    "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_cgl_2025.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "5",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 5",
+     "min": 29200,
+     "max": 29200,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:chief-commercial-cum-ticket-supervisor-in-indian-railways": {
+   "asOf": "2024",
+   "quote": "CEN 05/2024 listed Chief Commercial cum Ticket Supervisor at Level 6 of the 7th CPC Pay Matrix, with initial pay of ₹35,400.",
+   "sources": [
+    "https://www.rrbcdg.gov.in/uploads/2024/05-NTPCG/Detailed%20CEN%2005-2024%20NTPC.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "6",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 6",
+     "min": 35400,
+     "max": 35400,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:commercial-cum-ticket-clerk-in-indian-railways": {
+   "asOf": "2024",
+   "quote": "The CEN 06/2024 notification stated an initial basic pay of ₹21,700 for CCTC at Pay Level 3.",
+   "sources": [
+    "https://rrbsecunderabad.gov.in/wp-content/uploads/2024/09/Final-CEN-06-2024-Undergraduate-English-V2.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "3",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 3",
+     "min": 21700,
+     "max": 21700,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:constable-general-duty-in-capfs": {
+   "asOf": "2026",
+   "quote": "The SSC GD 2026 notice specified Pay Level 3, ₹21,700–₹69,100, for the advertised posts.",
+   "sources": [
+    "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/notice_01122025.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "3",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 3",
+     "min": 21700,
+     "max": 21700,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:data-entry-operator-deo": {
+   "asOf": "2025",
+   "quote": "As dated context, SSC’s CHSL 2025 notice listed DEO posts at Pay Level 4 (₹25,500–₹81,100) and Pay Level 5 (₹29,200–₹92,300), while DEO Grade ‘A’ was listed at Pay Level 4 (₹25,500–₹81,100).",
+   "sources": [
+    "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_chsl_2025.pdf",
+    "https://cag.gov.in/cen/kolkata/hi/page-cen-kolkata-administration-rti-act",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "4",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 4",
+     "min": 25500,
+     "max": 25500,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:data-entry-operator-grade-b": {
+   "asOf": "2024",
+   "quote": "Under the Electronic Data Processing Cadre (Group C post) Recruitment Rules, 2024 for the Staff Selection Commission, DEO Grade B is a General Central Service, Group C, non-gazetted and non-ministerial post at Pay Matrix Level 5 (basic-pay range ₹29,200–₹92,300).",
+   "sources": [
+    "https://egazette.gov.in/WriteReadData/2024/251802.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "5",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 5",
+     "min": 29200,
+     "max": 29200,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:dental-hygienist-in-indian-railways": {
+   "asOf": "2024",
+   "quote": "For the 2024 notification only, the post was Pay Level 6 under the 7th CPC, with initial pay of ₹35,400 and medical standard C2.",
+   "sources": [
+    "https://rrbsecunderabad.gov.in/wp-content/uploads/2024/08/Detailed-CEN-04-2024-Paramedical-English.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "6",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 6",
+     "min": 35400,
+     "max": 35400,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:dialysis-technician-in-indian-railways": {
+   "asOf": "2025",
+   "quote": "In CEN 03/2025, the post was in 7th CPC Pay Level 6 with initial basic pay of ₹35,400.",
+   "sources": [
+    "https://www.rrbcdg.gov.in/uploads/2025/03-PMED/CEN%2003_2025.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "6",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 6",
+     "min": 35400,
+     "max": 35400,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:ecg-technician-in-indian-railways": {
+   "asOf": "2025",
+   "quote": "The August 2025 notice listed ECG Technician at 7th CPC Pay Level 4, initial basic pay of ₹25,500, C1 medical standard, and age 18–33 as on January 1, 2026.",
+   "sources": [
+    "https://www.rrbcdg.gov.in/uploads/2025/03-PMED/CEN%2003_2025.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "4",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 4",
+     "min": 25500,
+     "max": 25500,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:engineer-officer-in-indian-naval-armament-service": {
+   "asOf": "2024",
+   "quote": "Under the pay scales stated in the 2024 ESE Rules, Junior Time Scale (Assistant Manager/Assistant Director of Naval Armaments) is Pay Matrix Level 10, ₹56,100–₹177,500 basic pay.",
+   "sources": [
+    "https://egazette.gov.in/WriteReadData/2024/257258.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "10",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 10",
+     "min": 56100,
+     "max": 56100,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:goods-train-manager-in-indian-railways": {
+   "asOf": "2024",
+   "quote": "CEN 05/2024 notified an initial basic pay of ₹29,200 for Goods Train Manager at Level 5.",
+   "sources": [
+    "https://rrbahmedabad.gov.in/wp-content/uploads/2024/09/CEN-05-2024-NTPC-Graduate_a11y.pdf",
+    "https://rrbranchi.gov.in/upload/files/pdf/05_11_56pm7f658c27d18aa91e8e07177e01927411.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "5",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 5",
+     "min": 29200,
+     "max": 29200,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:government-physiotherapist": {
+   "asOf": "2024",
+   "quote": "The 2024 RRB Physiotherapist Grade II notice listed Pay Level 6 with an initial pay figure of ₹35,400;",
+   "sources": [
+    "https://rrbsecunderabad.gov.in/wp-content/uploads/2024/08/Detailed-CEN-04-2024-Paramedical-English.pdf",
+    "https://health.delhi.gov.in/sites/default/files/Health/generic_multiple_files/draft_rrs_physiotherapist.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "6",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 6",
+     "min": 35400,
+     "max": 35400,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:government-radiographer": {
+   "asOf": "2024",
+   "quote": "RRB CEN 04/2024 showed initial basic pay of ₹29,200 for Radiographer X-Ray Technician at Pay Level 5.",
+   "sources": [
+    "https://rrbsecunderabad.gov.in/wp-content/uploads/2024/08/Detailed-CEN-04-2024-Paramedical-English.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "5",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 5",
+     "min": 29200,
+     "max": 29200,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:health-and-malaria-inspector-grade-iii-in-indian-railways": {
+   "asOf": "2024",
+   "quote": "In the 2024 RRB paramedical notice, the post was listed at 7th CPC Pay Level 6, with an initial basic pay of ₹35,400 and medical standard C1.",
+   "sources": [
+    "https://rrbsecunderabad.gov.in/wp-content/uploads/2024/08/Detailed-CEN-04-2024-Paramedical-English.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "6",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 6",
+     "min": 35400,
+     "max": 35400,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:indian-administrative-service-ias-officer": {
+   "asOf": "2016",
+   "quote": "Under those rules, a direct recruit’s initial basic pay is fixed at the first cell of Pay Matrix Level 10 (Junior Scale); the rules then specify higher pay levels for subsequent IAS grades.",
+   "sources": [
+    "https://dopt.gov.in/sites/default/files/IAS_PAY_Rules2016.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "10",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 10",
+     "min": 56100,
+     "max": 56100,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:indian-foreign-service-ifs-officer": {
+   "asOf": "2020",
+   "quote": "The Indian Foreign Service (Recruitment, Cadre and Seniority) Rules, 2020 list Junior Time Scale—the direct-recruit entry grade—as Pay Matrix Level 10, ₹56,100–₹177,500 basic pay.",
+   "sources": [
+    "https://www.mea.gov.in/Uploads/PublicationDocs/32655_IFS__RCSP__Rules_2020.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "10",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 10",
+     "min": 56100,
+     "max": 56100,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:indian-police-service-ips-officer": {
+   "asOf": "2016",
+   "quote": "The first Level 10 cell shown in the notified matrix is ₹56,100 basic pay per month; take-home pay varies with applicable allowances, deductions, posting and later government revisions.",
+   "sources": [
+    "https://www.mha.gov.in/sites/default/files/2024-07/IPSPayRules2016_31072024.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "10",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 10",
+     "min": 56100,
+     "max": 56100,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:indian-revenue-service-irs-officer": {
+   "asOf": "2026",
+   "quote": "As a current pay-structure reference, the entry Assistant Commissioner/Assistant Director grade in the IRS (Customs & Indirect Taxes) civil list is Pay Matrix Level 10; the Seventh Central Pay Commission pay matrix shows a Level 10 starting basic pay of ₹56,100.",
+   "sources": [
+    "https://dghrdcbic.gov.in/public/website/Civil_list_updated_20_may.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7cpc_report_eng.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "10",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 10",
+     "min": 56100,
+     "max": 56100,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:inspector-of-income-tax-in-cbdt": {
+   "asOf": "2026",
+   "quote": "The CGLE 2026 notice placed the post at Pay Level 7, with the stated pay-matrix range of ₹44,900–₹1,42,400.",
+   "sources": [
+    "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_cgl_2025.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7cpc_report_eng.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "7",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 7",
+     "min": 44900,
+     "max": 44900,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:judge-advocate-general-jag-entry-scheme": {
+   "asOf": "2026",
+   "quote": "On commissioning, it lists Lieutenant pay at Level 10, ₹56,100–₹177,500, and fixed Military Service Pay of ₹15,500 per month for ranks from Lieutenant through Brigadier.",
+   "sources": [
+    "https://jkadworld.com/wp-content/uploads/2026/01/Notification_for_JAG_Entry_Scheme_124rd_Course__Oct_2026_.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "10",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 10",
+     "min": 56100,
+     "max": 56100,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:junior-account-assistant-cum-typist-in-indian-railways": {
+   "asOf": "2024",
+   "quote": "CEN 05/2024 listed JAACT at Pay Level 5 of the 7th CPC pay matrix, with initial basic pay of ₹29,200.",
+   "sources": [
+    "https://www.rrbcdg.gov.in/uploads/2024/05-NTPCG/Indicative%20Notice%20CEN-05-2024.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "5",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 5",
+     "min": 29200,
+     "max": 29200,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:junior-clerk-cum-typist-in-indian-railways": {
+   "asOf": "2024",
+   "quote": "CEN 06/2024 placed Junior Clerk Cum Typist at 7th CPC Pay Level 2, with an initial basic pay of ₹19,900 and medical standard C2.",
+   "sources": [
+    "https://rrbchennai.gov.in/downloads/Final_CEN_06-2024_Undergraduate%20English.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "2",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 2",
+     "min": 19900,
+     "max": 19900,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:junior-engineer-central-government": {
+   "asOf": "2024",
+   "quote": "For the SSC JE 2024 recruitment, the advertised posts were Group ‘B’ (Non-Gazetted), Non-Ministerial posts at 7th CPC Pay Level 6, with the published pay-matrix range of ₹35,400–₹1,12,400.",
+   "sources": [
+    "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2017006&lang=2&reg=48",
+    "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_je_2025.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "6",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 6",
+     "min": 35400,
+     "max": 35400,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:junior-engineer-indian-railways": {
+   "asOf": "2024",
+   "quote": "In CEN 03/2024, JE was listed at Level 6 of the 7th CPC Pay Matrix with initial basic pay of ₹35,400 plus admissible allowances.",
+   "sources": [
+    "https://www.rrbcdg.gov.in/uploads/2024/03-JE/CEN%2003%202024_JE.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "6",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 6",
+     "min": 35400,
+     "max": 35400,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:junior-statistical-officer-jso": {
+   "asOf": "2025",
+   "quote": "The SSC CGL 2025 notice placed JSO in Pay Level 6, whose published pay-matrix range was ₹35,400–₹1,12,400.",
+   "sources": [
+    "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_cgl_2025.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "6",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 6",
+     "min": 35400,
+     "max": 35400,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:laboratory-assistant-grade-ii-in-indian-railways": {
+   "asOf": "2024",
+   "quote": "In CEN 04/2024, Laboratory Assistant Grade II was a 7th CPC Pay Level 3 post with an initial basic pay of ₹21,700.",
+   "sources": [
+    "https://rrbsecunderabad.gov.in/wp-content/uploads/2024/08/Detailed-CEN-04-2024-Paramedical-English.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "3",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 3",
+     "min": 21700,
+     "max": 21700,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:lieutenant-in-the-indian-army-judge-advocate-general-branch": {
+   "asOf": "2026",
+   "quote": "The October 2026 JAG notification stated that, upon successful commissioning, pay would be fixed at the first cell of Pay Level 10; it also listed Military Service Pay of ₹15,500 per month for ranks from Lieutenant through Brigadier.",
+   "sources": [
+    "https://www.nijuktikhabar.com/watermark-pdf/31-01-2026/8794341769877012.pdf",
+    "https://joinindianarmy.nic.in/writereaddata/Portal/NotificationPDF/Notification_for_JAG_Entry_Scheme_125th_Course_Apr_2027.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "10",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 10",
+     "min": 56100,
+     "max": 56100,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:loco-pilot-goods-in-indian-railways": {
+   "asOf": "2026",
+   "quote": "The official avenue chart classifies Loco Pilot (Goods) at Pay Level 6, while Railway Board/railway circular material lists it among loco running staff for kilometreage allowance and allowance-in-lieu-of-kilometreage purposes.",
+   "sources": [
+    "https://nfr.indianrailways.gov.in/cris/uploads/files/1512458206162-MECHANICAL.pdf",
+    "https://scr.indianrailways.gov.in/uploads/files/1583839522789-sc2019arc.pdf",
+    "https://nair.indianrailways.gov.in/uploads/files/1589283206930-Draft%20Revised%20IREC.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "6",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 6",
+     "min": 35400,
+     "max": 35400,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:lower-divisional-clerk-junior-secretariat-assistant-ldc-jsa": {
+   "asOf": "2025",
+   "quote": "The SSC CHSL 2025 notice placed LDC/JSA at Central Pay Matrix Level 2, ₹19,900–₹63,200.",
+   "sources": [
+    "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_chsl_2025.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "2",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 2",
+     "min": 19900,
+     "max": 19900,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:multi-tasking-staff-central-government": {
+   "asOf": "2025",
+   "quote": "The 2025 SSC notice placed MTS in Pay Level 1 under the 7th Central Pay Commission pay matrix.",
+   "sources": [
+    "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_mts_2025.pdf?mode=light",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "1",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 1",
+     "min": 18000,
+     "max": 18000,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:nursing-officer-government": {
+   "asOf": "2025",
+   "quote": "ESIC’s 2020 Nursing Officer recruitment regulations list the post at 7th CPC Pay Level 7 (₹44,900–₹1,42,400); the 2025 AIIMS NORCET notice likewise advertised Nursing Officer posts at Level 7 and stated that usual admissible Central Government allowances apply.",
+   "sources": [
+    "https://esic.gov.in/attachments/RecruitmentRegulationFile/156748fa08cb44da68df3d36f2f94f8a.pdf",
+    "https://docs.aiimsexams.ac.in/sites/1_Advertisement_NORCET_-8.Ver_2.0%5B1%5D.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "7",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 7",
+     "min": 44900,
+     "max": 44900,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:nursing-supervisor": {
+   "asOf": "2026",
+   "quote": "As a dated official example, the Department of Health Research’s BMHRC Nursing Supervisor rules state Pay Level 8 with basic pay of ₹47,600.",
+   "sources": [
+    "https://dhr.gov.in/sites/default/files/website%20notification%20final.pdf",
+    "https://egazette.ladakh.gov.in/WriteReadData/2025/1651.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "8",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 8",
+     "min": 47600,
+     "max": 47600,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:officer-in-indian-radio-regulatory-service": {
+   "asOf": "2024",
+   "quote": "The May 2024 cadre review recorded IRRS Group ‘A’ Junior Time Scale at Pay Matrix Level 10, with higher grades through Senior Time Scale, Junior Administrative Grade, Senior Administrative Grade, and Higher Administrative Grade.",
+   "sources": [
+    "https://egazette.gov.in/WriteReadData/2024/254257.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "10",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 10",
+     "min": 56100,
+     "max": 56100,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:officer-in-indian-telecommunication-service": {
+   "asOf": "2025",
+   "quote": "A DoT appointment offer dated July 17, 2025 placed Assistant Divisional Engineer Telecom (JTS of ITS Group ‘A’) at Level 10 in the 7th Central Pay Commission matrix: ₹56,100–₹177,500 plus applicable allowances.",
+   "sources": [
+    "https://www.dot.gov.in/static/uploads/2025/07/a172d7f416a217056bb02e226e68f82a.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "10",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 10",
+     "min": 56100,
+     "max": 56100,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:pharmacist-in-indian-railways": {
+   "asOf": "2024",
+   "quote": "The official CEN 04/2024 paramedical recruitment listed Pharmacist (Entry Grade) at 7th CPC Pay Level 5 with an initial pay of ₹29,200.",
+   "sources": [
+    "https://rrbsecunderabad.gov.in/wp-content/uploads/2024/08/Detailed-CEN-04-2024-Paramedical-English.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "5",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 5",
+     "min": 29200,
+     "max": 29200,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:postal-assistant-sorting-assistant-pa-sa": {
+   "asOf": "2025",
+   "quote": "The Department’s 2022 rules and SSC’s 2025 notice identify PA/SA at Pay Matrix Level 4, ₹25,500–81,100; this is the pay-matrix range, not a guaranteed in-hand salary.",
+   "sources": [
+    "https://www.indiapost.gov.in/api/documents/file/U2FsdGVkX19B6vXsbrtrZmO-LRxUDaSCd07xip1KmSzznNswSK9DHeo1p-D1uaJk47NKLrx3JwMHgELdCwma4w",
+    "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_cgl_2025.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "4",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 4",
+     "min": 25500,
+     "max": 25500,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:primary-teacher-in-a-central-government-school": {
+   "asOf": "2022",
+   "quote": "KVS’s 2022 PRT direct-recruitment advertisement listed Pay Matrix Level 6, ₹35,400–₹112,400, with an upper age limit of 30 years before applicable relaxations.",
+   "sources": [
+    "https://cdnbbsr.s3waas.gov.in/s32d2ca7eedf739ef4c3800713ec482e1a/uploads/2025/02/2025021453.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "6",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 6",
+     "min": 35400,
+     "max": 35400,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:scientist-engineer-sc-at-isro": {
+   "asOf": "2025",
+   "quote": "In the 2025 advertisements, the minimum basic pay stated for Level 10 was ₹56,100 per month, with DA, HRA and transport allowance under extant rules.",
+   "sources": [
+    "https://www.isro.gov.in/media_isro/pdf/recruitmentNotice/2025_May/ICRBAdvt_BILINGUAL.pdf",
+    "https://www.isro.gov.in/media_isro/pdf/recruitmentNotice/2025_April/Advt_EMC_2025GATEWebsiteAdvertisementBilingual.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "10",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 10",
+     "min": 56100,
+     "max": 56100,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:section-officer-in-central-government": {
+   "asOf": "2025",
+   "quote": "For the CSS SO grade, the Level 8 pay-matrix range cited in a 2025 Gazette appointment was ₹47,600–₹1,51,100 as basic pay.",
+   "sources": [
+    "https://egazette.gov.in/WriteReadData/2025/263011.pdf",
+    "https://doe.gov.in/order-central-pay-commission/16",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "8",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 8",
+     "min": 47600,
+     "max": 47600,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:security-assistant-b-drdo": {
+   "asOf": "2016",
+   "quote": "Under the Central Civil Services (Revised Pay) Rules, 2016 conversion table, grade pay ₹2,400 corresponds to Pay Matrix Level 4, whose published range is ₹25,500–81,100.",
+   "sources": [
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "4",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 4",
+     "min": 25500,
+     "max": 25500,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:senior-clerk-cum-typist-in-indian-railways": {
+   "asOf": "2024",
+   "quote": "In CEN 05/2024, the post was in 7th CPC Pay Level 5 with stated initial basic pay of ₹29,200.",
+   "sources": [
+    "https://www.rrbcdg.gov.in/uploads/2024/05-NTPCG/Detailed%20CEN%2005-2024%20NTPC.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "5",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 5",
+     "min": 29200,
+     "max": 29200,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:senior-commercial-cum-ticket-clerk-in-indian-railways": {
+   "asOf": "2019",
+   "quote": "As documented in the 2018 Railway Board cadre order and the 2019 NTPC notice, Senior Commercial cum Ticket Clerk is a 7th CPC Level-5 post with an initial basic pay of ₹29,200 in that recruitment context and a Level-5 pay-matrix range of ₹29,200–₹92,300.",
+   "sources": [
+    "https://rrbsecunderabad.gov.in/wp-content/uploads/2023/08/Detailed-CEN-01-2019.pdf",
+    "https://scr.indianrailways.gov.in/uploads/files/1568203451891-Serial%20Circulars-2018.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "5",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 5",
+     "min": 29200,
+     "max": 29200,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:senior-secretariat-assistant": {
+   "asOf": "2026",
+   "quote": "As stated in the SSC notice published on June 5, 2026, the Level 4 pay-matrix range shown for SSA/UDC Grade is ₹25,500–₹81,100.",
+   "sources": [
+    "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/departmental_05062026.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "4",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 4",
+     "min": 25500,
+     "max": 25500,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:senior-section-engineer-in-indian-railways": {
+   "asOf": "2021",
+   "quote": "SSE (Signal) was recorded as Pay Matrix Level 7 in a Southern Railway promotion order dated September 21, 2021.",
+   "sources": [
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf",
+    "https://sr.indianrailways.gov.in/uploads/files/1632292770461-Promotion%20and%20Transfer%20of%20Senior%20Section%20EngineerSignal%20ST%20Department.pdf"
+   ],
+   "kind": "level",
+   "level": "7",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 7",
+     "min": 44900,
+     "max": 44900,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:senior-stenographer-in-government": {
+   "asOf": "2024",
+   "quote": "As dated official examples, the Food & Public Distribution 2024 draft rules list Pay Level 6 (₹35,400–₹1,12,400), and MPEDA’s 2025 recruitment-rule proposal also lists Pay Level 6.",
+   "sources": [
+    "https://dfpd.gov.in/WriteReadData/Notices/52ca5ba9-3d32-4c8e-8332-1d0175b5692e_Draft%20RRs%20Sr%20Steno%20English.pdf",
+    "https://mpeda.gov.in/wp-content/uploads/2025/06/stakeholders_for_ammendment_of-RR.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "6",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 6",
+     "min": 35400,
+     "max": 35400,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:senior-technical-assistant-drdo": {
+   "asOf": "2026",
+   "quote": "The CEPTAM-11 advertisement lists STA-B at 7th CPC Pay Matrix Level 6, ₹35,400–₹1,12,400 basic pay, plus allowances and benefits under applicable Government of India rules.",
+   "sources": [
+    "https://www.drdo.gov.in/drdo/sites/default/files/vacancy/CEPTAM-11_AdvtEnglish.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "6",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 6",
+     "min": 35400,
+     "max": 35400,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:senior-technician-indian-railways": {
+   "asOf": "2016",
+   "quote": "As of the cited Railway Board framework, Senior Technician/MCM is mapped to 7th CPC Pay Matrix Level 6.",
+   "sources": [
+    "https://scr.indianrailways.gov.in/uploads/files/1486720069900-SC_2016.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "6",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 6",
+     "min": 35400,
+     "max": 35400,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:station-master-in-indian-railways": {
+   "asOf": "2024",
+   "quote": "As a dated example, CEN 05/2024 listed Station Master at 7th CPC Pay Level 6 with initial basic pay of ₹35,400.",
+   "sources": [
+    "https://www.rrbcdg.gov.in/uploads/2024/05-NTPCG/Indicative%20Notice%20CEN-05-2024.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "6",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 6",
+     "min": 35400,
+     "max": 35400,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:stenographer-government": {
+   "asOf": "2019",
+   "quote": "As a concrete but dated DRDO example, the CEPTAM-09 Admin & Allied advertisement listed Stenographer Grade-II at 7th CPC Pay Level 4 with a basic-pay range of ₹25,500–81,100.",
+   "sources": [
+    "https://doe.gov.in/order-central-pay-commission/16",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "4",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 4",
+     "min": 25500,
+     "max": 25500,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:store-assistant-b-drdo": {
+   "asOf": "2026",
+   "quote": "The post is referenced in current DRDO recruitment rules as Pay Matrix Level 4, ₹25,500–81,100 basic pay.",
+   "sources": [
+    "https://egazette.gov.in/WriteReadData/2023/248377.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "4",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 4",
+     "min": 25500,
+     "max": 25500,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:store-assistant-drdo": {
+   "asOf": "2022",
+   "quote": "In CEPTAM-10/Admin & Allied recruitment (2022), Store Assistant A was listed at 7th CPC Pay Level 2: ₹19,900–₹63,200 in the pay matrix, with other benefits and allowances under then-applicable Government of India rules.",
+   "sources": [
+    "https://drdo.gov.in/drdo/en/offerings/vacancies",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "2",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 2",
+     "min": 19900,
+     "max": 19900,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:sub-inspector-in-central-bureau-of-investigation-cbi": {
+   "asOf": "2025",
+   "quote": "The SSC CGL 2025 notice placed CBI Sub-Inspector in Pay Level 7 and showed the Level 7 pay-matrix range as ₹44,900–₹1,42,400.",
+   "sources": [
+    "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_cgl_2025.pdf",
+    "https://ssc.gov.in/api/attachment/uploads/masterData/TentativeVacancy/Tentative_Vacancies_31072025.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "7",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 7",
+     "min": 44900,
+     "max": 44900,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:tax-assistant-in-cbdt": {
+   "asOf": "2026",
+   "quote": "The May 2026 SSC CGL notice places Tax Assistant (CBDT) at Pay Level 4, with the published basic-pay range of ₹25,500–₹81,100.",
+   "sources": [
+    "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_cgl_2025.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "4",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 4",
+     "min": 25500,
+     "max": 25500,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:technical-officer-a-drdo": {
+   "asOf": "2024",
+   "quote": "The Gazette-notified 2024 DRTC schedule places TO-A at 7th CPC Pay Matrix Level 7, with a stated range of ₹44,900–₹1,42,400.",
+   "sources": [
+    "https://egazette.gov.in/WriteReadData/2024/257535.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "7",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 7",
+     "min": 44900,
+     "max": 44900,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:technician-b-drdo": {
+   "asOf": "2024",
+   "quote": "The 2024 rules list Technician ‘B’ at Level 4, ₹25,500–₹81,100 in the pay matrix.",
+   "sources": [
+    "https://egazette.gov.in/WriteReadData/2024/257535.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "4",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 4",
+     "min": 25500,
+     "max": 25500,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:technician-drdo": {
+   "asOf": "2026",
+   "quote": "For the CEPTAM-11 cycle, Technician-A carried 7th CPC Pay Matrix Level 2: ₹19,900–₹63,200 basic pay, with allowances and benefits governed by then-extant Government of India rules.",
+   "sources": [
+    "https://drdo.gov.in/drdo/sites/default/files/vacancy/CEPTAM-11_AdvtEnglish.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "2",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 2",
+     "min": 19900,
+     "max": 19900,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:technician-indian-railways": {
+   "asOf": "2025",
+   "quote": "As a dated reference point, CEN 02/2025 listed Technician Grade III at 7th CPC Pay Level 2 with initial basic pay of ₹19,900.",
+   "sources": [
+    "https://www.rrbcdg.gov.in/uploads/2025/02-TECH/022025-CEN.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "2",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 2",
+     "min": 19900,
+     "max": 19900,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:trains-clerk-in-indian-railways": {
+   "asOf": "2025",
+   "quote": "CEN 07/2025 listed Trains Clerk at Level 2 of the 7th CPC pay matrix with initial basic pay of ₹19,900.",
+   "sources": [
+    "https://www.rrbcdg.gov.in/uploads/2025/07-NTPCUG/072025NTPCUG-CEN.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "2",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 2",
+     "min": 19900,
+     "max": 19900,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:upper-division-clerk-udc": {
+   "asOf": "2026",
+   "quote": "Many central-government UDC posts are placed at 7th CPC Pay Level 4 (₹25,500–81,100 basic-pay matrix), although the applicable level and total take-home remuneration must be checked in the employer’s current rules or vacancy notice.",
+   "sources": [
+    "https://egazette.gov.in/WriteReadData/2024/258310.pdf",
+    "https://www.vecc.gov.in/hi/node/890",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "4",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 4",
+     "min": 25500,
+     "max": 25500,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:upper-primary-teacher-in-a-central-government-school": {
+   "asOf": "2025",
+   "quote": "The KVS–NVS Recruitment 2025 notification listed TGT posts at Pay Matrix Level 7, ₹44,900–₹1,42,400.",
+   "sources": [
+    "https://www.cbse.gov.in/cbsenew/documents/Detailed_Notification_KVS_NVS_2025_13112025.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "7",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 7",
+     "min": 44900,
+     "max": 44900,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "job_role:medical-officer": {
+   "asOf": "2026",
+   "quote": "As a dated reference point only, ISRO’s 2026 Medical Officer–SC advertisement stated Pay Level 10, with a basic-pay range of ₹56,100–₹1,77,500, admissible allowances, and Non-Practising Allowance at 20% of basic pay.",
+   "sources": [
+    "https://apps.ursc.gov.in/URSCBE-2026/advt.jsp",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "10",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 10",
+     "min": 56100,
+     "max": 56100,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "job_role:pharmacist": {
+   "asOf": "2025",
+   "quote": "For a dated public-sector reference point only, 2025 central-government rules for a specified Pharmacist post listed Pay Level 5, ₹29,200–₹92,300.",
+   "sources": [
+    "https://www.pci.gov.in/en/faqs/",
+    "https://egazette.gov.in/WriteReadData/2025/265888.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "5",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 5",
+     "min": 29200,
+     "max": 29200,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "job_role:public-health-nurse": {
+   "asOf": "2019",
+   "quote": "As dated central-government context, the AIIH&PH Public Health Nursing Officer schedule associated with the 2019 recruitment rules lists Level 8 in the pay matrix, with a range of ₹47,600–₹1,51,100; it should not be treated as a current or universal salary promise for PHN vacancies elsewhere.",
+   "sources": [
+    "https://www.mohfw.gov.in/sites/default/files/PHNO%20and%20SPHNO_0.pdf",
+    "https://nhm.gov.in/index1.php?lang=1&level=1&lid=191&sublinkid=807",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "8",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 8",
+     "min": 47600,
+     "max": 47600,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "job_role:radiographer": {
+   "asOf": "2026",
+   "quote": "As a dated government-recruitment example, ESIC lists the Radiographer post at Pay Level 5 (₹29,200–₹92,300 in the pay matrix); applicable pay, allowances, eligibility and vacancies depend on the particular notification.",
+   "sources": [
+    "https://esic.gov.in/attachments/circularfile/c1616ecd1e5996febcf3fca6d66d9cba.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "5",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 5",
+     "min": 29200,
+     "max": 29200,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "job_role:scientist-in-a-government-research-organisation-csir-drdo-etc": {
+   "asOf": "2026",
+   "quote": "As a dated official recruitment example, RAC Advertisement 145 described DRDO Scientist-B as Level 10 with a starting matrix figure of ₹56,100 and reported approximate total emoluments of ₹1,00,000 per month at the then-current metro-city rate, inclusive of HRA and other allowances.",
+   "sources": [
+    "https://rab.csir.res.in/assets/downloads/csrap_rules_2025.pdf",
+    "https://rac.gov.in/download/archive/advt_145.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7cpc_report_eng.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "10",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 10",
+     "min": 56100,
+     "max": 56100,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "job_role:senior-operation-theatre-technician": {
+   "asOf": "2026",
+   "quote": "In the Kalawati Saran Children’s Hospital recruitment rules published on April 4, 2026, the single Senior Operation Theatre Technician post was Group C, non-gazetted and non-ministerial at pay-matrix Level 5 (₹29,200–₹92,300).",
+   "sources": [
+    "https://egazette.gov.in/WriteReadData/2026/271855.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "5",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 5",
+     "min": 29200,
+     "max": 29200,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "job_role:senior-physiotherapist": {
+   "asOf": "2025",
+   "quote": "For a dated central-government reference point, Safdarjung Hospital’s Senior Physiotherapist Recruitment Rules, 2025 place the post at Pay Matrix Level 10 with basic pay of ₹56,100–₹1,77,500.",
+   "sources": [
+    "https://www.vmmc-sjh.mohfw.gov.in/sites/default/files/Recruitment%20Rules%20for%20the%20post%20of%20Senior%20Physiotherapist.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "10",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 10",
+     "min": 56100,
+     "max": 56100,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "job_role:staff-nurse": {
+   "asOf": "2025",
+   "quote": "As dated public-sector reference points only, the Railway Recruitment Board’s CEN 03/2025 listed Nursing Superintendent at Pay Level 7 with initial pay of ₹44,900, while AIIMS NORCET-10 described Nursing Officer posts at Pay Level 7 and noted that usual Central Government allowances apply according to the employing institute and city.",
+   "sources": [
+    "https://www.rrbcdg.gov.in/uploads/2025/03-PMED/CEN%2003_2025.pdf",
+    "https://rrpdocuments.aiimsexams.ac.in/1771933787527-856734394.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVRUVRLXWMSLVSAP7%2F20260224%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20260224T123657Z&X-Amz-Expires=18000&X-Amz-Signature=c93b501b26ade3dd1d81adf22aa00e4ba9c8882afeea8808375ea1e5bf2f1399&X-Amz-SignedHeaders=host&response-content-type=application%2Fpdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "7",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 7",
+     "min": 44900,
+     "max": 44900,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "job_role:operation-theatre-supervisor": {
+   "asOf": "2023",
+   "quote": "As a dated public-sector reference only, GMCH Chandigarh’s 2023 proposed recruitment rule places Operation Theatre Supervisor at 7th CPC Pay Matrix Level 6, ₹35,400–₹1,12,400.",
+   "sources": [
+    "https://www.gmch.gov.in/sites/default/files/documents/a3_1.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "6",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 6",
+     "min": 35400,
+     "max": 35400,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "job_role:operation-theatre-technician": {
+   "asOf": "2025",
+   "quote": "The Healthcare Sector Skill Council’s Operating Theatre Technician qualification pack, HSS/Q2601, is mapped at proposed NSQF Level 4 and specifies 1,200 notional training hours, including 400 hours of OJT/clinical/lab training.",
+   "sources": [
+    "https://www.healthcare-ssc.in/archive-files-page-254",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "4",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 4",
+     "min": 25500,
+     "max": 25500,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "job_role:senior-radiographer": {
+   "asOf": "2022",
+   "quote": "For context, CRPF recruitment rules for its cadre designation state that personnel designated Senior Radiographer draw Pay Matrix Level 6, ₹35,400–₹1,12,400.",
+   "sources": [
+    "https://crpf.gov.in/Upload/Document/1_806_2_286062022.pdf",
+    "https://www.isro.gov.in/ISRO_EN/Norms_recruit_career_prospects.html",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "6",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 6",
+     "min": 35400,
+     "max": 35400,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "job_role:junior-resident-doctor": {
+   "asOf": "2026",
+   "quote": "As a dated public-sector example, VMMC & Safdarjung Hospital’s February 18, 2026 notice reported monthly Junior Resident basic pay of ₹56,100, NPA of ₹11,220, HRA of ₹16,830, DA of ₹39,046 and TA of ₹11,376, for a stated total of ₹134,572.",
+   "sources": [
+    "https://www.vmmc-sjh.mohfw.gov.in/sites/default/files/Notice%20dated%2018.02.2026%20-%20Pay%20%26%20Allowances%20of%20Junior%20Resident%20%28Non-PG%29%2C%20Senior%20Resident%2C%20and%20PG%20Resident%20doctors%20in%20VMMC%20%26%20SJH.pdf",
+    "https://vmmc-sjh.mohfw.gov.in/sites/default/files/Notice%20dated%2008.05.2025%20-%20Advertisement%20for%20the%20post%20of%20Junior%20Resident%20%28Non-PG%29%20MBBS%20on%20Regular%20basis.pdf",
+    "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+   ],
+   "kind": "level",
+   "level": "10",
+   "stages": [
+    {
+     "who": "Starting basic pay, Pay Level 10",
+     "min": 56100,
+     "max": 56100,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "Pay rises by a 3% increment each year, and a promotion moves you up to a higher pay level.",
+    "sources": [
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_Highlight.pdf",
+     "https://doe.gov.in/files/cenetral-pay_document/7thCPC_revisedpayrules25072016.pdf"
+    ]
+   },
+   "kindLabel": "Central government pay rules"
+  },
+  "government_service:assistant-commissioner-in-state-labour-department": {
+   "asOf": "2024",
+   "quote": "As dated examples rather than a national salary promise: Telangana’s 2024 Group-I notice showed ₹54,220–₹1,33,630 for the post, while a Maharashtra Labour Department promotion order described Assistant Commissioner of Labour, Group A at Pay Matrix Level S-18 (₹49,100–₹1,55,800).",
+   "sources": [
+    "https://websitenew.tgpsc.gov.in/preview/RElSRUNUUkVDUlVJVE1FTlROT1RJL05PVElGSUNBVElPTl9OTElGSUNBVElPTl9OT18wMi0yMDI0X0dyb3VwLUlfU2VydmljZXMgKDEpMjAyNDAyMjAxNDA3MzcucGRmr95v17a0y2d8i13v",
+    "https://labour.maharashtra.gov.in/en/publication/gr/regarding-posting-after-temporary-promotion-post-assistant-commissioner-labor-gra"
+   ],
+   "kind": "rule",
+   "stages": [
+    {
+     "who": "Telangana, 2024",
+     "min": 54220,
+     "max": 133630,
+     "per": "month"
+    }
+   ],
+   "kindLabel": "Government or official pay rules"
+  },
+  "government_service:assistant-town-planner": {
+   "asOf": "2024",
+   "quote": "Kerala PSC’s December 31, 2024 departmental-quota notification lists a scale of ₹55,200–₹1,15,300.",
+   "sources": [
+    "https://www.tpmanipur.mn.gov.in/en/suo-moto-disclosure-under-section-41b-rti-act-2005/",
+    "https://www.keralapsc.gov.in/sites/default/files/2025-01/noti-572-24.pdf"
+   ],
+   "kind": "rule",
+   "stages": [
+    {
+     "who": "Kerala, 2024",
+     "min": 55200,
+     "max": 115300,
+     "per": "month"
+    }
+   ],
+   "kindLabel": "Government or official pay rules"
+  },
+  "government_service:ayurvedic-medical-officer": {
+   "asOf": "2026",
+   "quote": "As dated examples, HPPSC advertised an Ayurvedic Medical Officer (Job Trainee) role in February 2026 at ₹29,500 per month, while the Goa State AYUSH Society advertised a one-year National AYUSH Mission Medical Officer (Ayurveda) contract in January 2026 at ₹40,000 per month, described as ₹25,000 fixed plus ₹15,000 performance-linked incentive.",
+   "sources": [
+    "https://www.hppsc.hp.gov.in/hppsc/WriteReadData/LINKS/Advt%20AMO008fb8cc-8844-42b0-bc35-2cbfea2a9a52.pdf",
+    "https://dhs.goa.gov.in/cms-gov-be/storage/app/public/uploads/newsNotices/cVPUcwwZBtu0nmSEoYawPsBEZNM9OzvCDah8iC8r.pdf"
+   ],
+   "kind": "notice",
+   "stages": [
+    {
+     "who": "Himachal Pradesh job trainee",
+     "min": 29500,
+     "max": 29500,
+     "per": "month"
+    }
+   ],
+   "kindLabel": "Public employer's notice"
+  },
+  "government_service:civil-judge-junior-division-in-state-judicial-service": {
+   "asOf": "2026",
+   "quote": "As a dated illustration only—not a nationwide salary benchmark—the Punjab and Haryana High Court’s Haryana gradation list published in 2026 displays ₹77,840 alongside several serving Civil Judge (Junior Division)/JMIC entries.",
+   "sources": [
+    "https://highcourtchd.gov.in/sub_pages/top_menu/dist_jud/pdf/Haryana_Gradation1.pdf",
+    "https://www.doj.gov.in/connect/grievance-redressal"
+   ],
+   "kind": "rule",
+   "stages": [
+    {
+     "who": "Haryana",
+     "min": 77840,
+     "max": 77840,
+     "per": "month"
+    }
+   ],
+   "kindLabel": "Government or official pay rules"
+  },
+  "government_service:community-health-officer": {
+   "asOf": "2026",
+   "quote": "As dated illustrations only: a UP NHM CHO-CCHN notice stated a training stipend of ₹10,000 per month and, on posting, up to ₹35,500 per month consisting of ₹20,500 salary plus up to ₹15,000 performance-based incentive.",
+   "sources": [
+    "https://upnrhm.gov.in/Uploads/Opportunities/2722992705398954.pdf",
+    "https://arogyakeralam.gov.in/wp-content/uploads/2020/04/DPMSU-KKD-1861-CLERK_CUM_DEO-2019-DPMSU-6.pdf"
+   ],
+   "kind": "notice",
+   "stages": [
+    {
+     "who": "Uttar Pradesh, during training",
+     "min": 10000,
+     "max": 10000,
+     "per": "month"
+    },
+    {
+     "who": "after posting, incl. incentive",
+     "min": 20500,
+     "max": 35500,
+     "per": "month"
+    }
+   ],
+   "kindLabel": "Public employer's notice"
+  },
+  "government_service:deputy-superintendent-of-police-in-state-police-service": {
+   "asOf": "2022",
+   "quote": "As dated context only, TNPSC's 21 July 2022 Group I notification placed DySP (Category I) in the Tamil Nadu Police Service and showed a revised Level 22 scale of ₹56,100–₹205,700 for the listed Group I posts.",
+   "sources": [
+    "https://www.tnpsc.gov.in/Document/English/Group%20-I%20Notification_English.pdf"
+   ],
+   "kind": "rule",
+   "stages": [
+    {
+     "who": "Tamil Nadu",
+     "min": 56100,
+     "max": 205700,
+     "per": "month"
+    }
+   ],
+   "kindLabel": "Government or official pay rules"
+  },
+  "government_service:fisheries-development-officer": {
+   "asOf": "2021",
+   "quote": "As dated historical context only, a Jammu & Kashmir official notice published on June 17, 2021 listed Fisheries Development Officer at Level 8, ₹47,600–₹151,100.",
+   "sources": [
+    "https://rgp.jk.gov.in/pdf/GAZETTE%202014/2021/G.%20No.%2012%20%202021%20%20PDF.pdf",
+    "https://portal-psc.ap.gov.in/HomePages/RecruitmentNotifications"
+   ],
+   "kind": "rule",
+   "stages": [
+    {
+     "who": "Jammu & Kashmir",
+     "min": 47600,
+     "max": 151100,
+     "per": "month"
+    }
+   ],
+   "kindLabel": "Government or official pay rules"
+  },
+  "government_service:fisheries-extension-officer": {
+   "asOf": "2026",
+   "quote": "Kerala PSC’s Category No. 045/2026 notification lists a scale of ₹50,200–₹1,05,300 for Fisheries Extension Officer.",
+   "sources": [
+    "https://www.keralapsc.gov.in/sites/default/files/2026-06/noti-45-26.pdf",
+    "https://psc.wb.gov.in/Download?param1=Ad_20240416115727_AdvtFISHERY.pdf&param2=advertisement"
+   ],
+   "kind": "rule",
+   "stages": [
+    {
+     "who": "Kerala",
+     "min": 50200,
+     "max": 105300,
+     "per": "month"
+    }
+   ],
+   "kindLabel": "Government or official pay rules"
+  },
+  "government_service:government-dental-surgeon": {
+   "asOf": "2025",
+   "quote": "As dated reference points only: Mizoram PSC’s 2022 Grade-III Dental Surgeon advertisement stated Pay Level 10 of ₹56,100–₹1,24,500; a 2025 NHM Wayanad notice stated ₹41,000 for a Dental Surgeon vacancy; and the Delhi Health Service draft listed Level 10 at ₹56,100–₹1,77,500 for its Dental Surgeon entry grade.",
+   "sources": [
+    "https://mpsc.mizoram.gov.in/uploads/attachments/2024/06/e4b8f468430922ca84f6cdf2493d88f4/advt-no7-of-2022-23-grade-iii-of-mhs-dental-surgeon-sub-cadre.pdf",
+    "https://arogyakeralam.gov.in/wp-content/uploads/2020/04/DPMSU-WYND-939-CDEO-2025-DPMSU.pdf",
+    "https://health.delhi.gov.in/sites/default/files/Health/generic_multiple_files/rrsdrs2.pdf"
+   ],
+   "kind": "rule",
+   "stages": [
+    {
+     "who": "Delhi Health Service",
+     "min": 56100,
+     "max": 177500,
+     "per": "month"
+    }
+   ],
+   "kindLabel": "Government or official pay rules"
+  },
+  "government_service:homoeopathic-medical-officer": {
+   "asOf": "2023",
+   "quote": "As a dated example, Odisha’s 27 December 2023 cadre-restructuring resolution placed base-level Homoeopathic Medical Officer posts at ₹44,900–₹142,400 under Level 10 of the Odisha Revised Scales of Pay Rules, 2017; it placed Senior HMO and district-level promotional posts at ₹56,100–₹177,500 under Level 12.",
+   "sources": [
+    "https://health.odisha.gov.in/sites/default/files/2023-12/Resolution-32113%20dtd.27.12.2023.pdf",
+    "https://hooghly.nic.in/notice/notification-for-engagement-of-part-time-contractual-homoeopathic-medical-officer-for-gram-panchayat-level-dispensaries-under-state-budget-head-and-nhm-ayush/"
+   ],
+   "kind": "rule",
+   "stages": [
+    {
+     "who": "Odisha",
+     "min": 44900,
+     "max": 142400,
+     "per": "month"
+    }
+   ],
+   "kindLabel": "Government or official pay rules"
+  },
+  "government_service:judicial-magistrate-first-class-in-state-judicial-service": {
+   "asOf": "2023",
+   "quote": "As a dated illustration rather than a current universal rate, a Madhya Pradesh High Court posting order dated December 5, 2023 recorded newly appointed Civil Judges (Junior Division), Entry Level, on a temporary basis in the ₹77,840–₹136,520 Level J-1 scale.",
+   "sources": [
+    "https://mphc.gov.in/PDF/web_pdf/PO/1123-Confdl-2023.pdf",
+    "https://hcs.gov.in/hcs/sites/default/files/Notification/Notice_5.pdf"
+   ],
+   "kind": "rule",
+   "stages": [
+    {
+     "who": "Madhya Pradesh",
+     "min": 77840,
+     "max": 136520,
+     "per": "month"
+    }
+   ],
+   "kindLabel": "Government or official pay rules"
+  },
+  "government_service:junior-engineer-state-government": {
+   "asOf": "2025",
+   "quote": "For dated comparison only, Puducherry PWD’s notified JE (Civil) recruitment rules show Pay Matrix Level 6, ₹35,400–₹1,12,400.",
+   "sources": [
+    "https://pwd.py.gov.in/sites/default/files/rr-je-overseer.pdf",
+    "https://pwd.wb.gov.in/services/resources/Orders/94-E_0001_638996907169754023.pdf"
+   ],
+   "kind": "rule",
+   "stages": [
+    {
+     "who": "Puducherry",
+     "min": 35400,
+     "max": 112400,
+     "per": "month"
+    }
+   ],
+   "kindLabel": "Government or official pay rules"
+  },
+  "government_service:legal-manager-in-a-psu": {
+   "asOf": "2026",
+   "quote": "As dated context only, BEL’s March 11, 2026 permanent-recruitment advertisement listed ₹50,000–₹1,60,000 with 3% annual increment for Assistant Manager (Legal), E-III, and ₹60,000–₹1,80,000 with 3% annual increment for Deputy Manager (Legal), E-IV.",
+   "sources": [
+    "https://bel-india.in/wp-content/uploads/2026/03/Detailed-Advertisement-Legal-BG.Cx-.pdf",
+    "https://careers.chennaimetrorail.org/Reference/CMRL-HR-CON-14-2024.pdf"
+   ],
+   "kind": "notice",
+   "stages": [
+    {
+     "who": "BEL Assistant Manager (Legal)",
+     "min": 50000,
+     "max": 160000,
+     "per": "month"
+    },
+    {
+     "who": "Deputy Manager (Legal)",
+     "min": 60000,
+     "max": 180000,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "The BEL notice states a 3% annual increment on these scales.",
+    "sources": [
+     "https://bel-india.in/wp-content/uploads/2026/03/Detailed-Advertisement-Legal-BG.Cx-.pdf",
+     "https://careers.chennaimetrorail.org/Reference/CMRL-HR-CON-14-2024.pdf"
+    ]
+   },
+   "kindLabel": "Public employer's notice"
+  },
+  "government_service:legal-officer-in-a-psu": {
+   "asOf": "2025",
+   "quote": "It also listed approximate annual CTC of ₹11.00 lakh during training and ₹22.50 lakh after successful completion, expressly noting that CTC varied by posting location and terms.",
+   "sources": [
+    "https://www.powergrid.in/sites/default/files/job_opportunities_document/OT_Law_2025.pdf",
+    "https://www.nhpcindia.com/assests/pzi_public/pdf_link/67552236e03c5.pdf"
+   ],
+   "kind": "notice",
+   "stages": [
+    {
+     "who": "POWERGRID, in training (CTC)",
+     "min": 1100000,
+     "max": 1100000,
+     "per": "year"
+    },
+    {
+     "who": "after training (CTC)",
+     "min": 2250000,
+     "max": 2250000,
+     "per": "year"
+    }
+   ],
+   "kindLabel": "Public employer's notice"
+  },
+  "government_service:senior-legal-officer-in-a-psu": {
+   "asOf": "2025",
+   "quote": "GAIL’s 2025 advertisement listed a ₹60,000–₹1,80,000 pay scale for Senior Officer (Law), E-2.",
+   "sources": [
+    "https://www.gailonline.com/careers/currentOpnning/Rectt_Advt_SRD__2411425.pdf",
+    "https://iocl.com/admin/img/UploadedFiles/LatestJobOpening/Files/20f8d18da6c2446bbd707578f3bcb620.pdf"
+   ],
+   "kind": "notice",
+   "stages": [
+    {
+     "who": "GAIL / IndianOil",
+     "min": 60000,
+     "max": 180000,
+     "per": "month"
+    }
+   ],
+   "kindLabel": "Public employer's notice"
+  },
+  "government_service:veterinary-officer-in-state-animal-husbandry-department": {
+   "asOf": "2024",
+   "quote": "Delhi’s Veterinary Officer recruitment rules, published in January 2024, list Level 10 in the pay matrix (₹56,100–₹177,500) plus non-practising allowance; this is an example for that employer, not a nationwide entitlement.",
+   "sources": [
+    "https://egazette.gov.in/WriteReadData/2024/251652.pdf",
+    "https://ard.wb.gov.in/upload/appointment/Document_31-1.pdf",
+    "https://mpsc.meghalaya.gov.in/advt/Advt26May2025.pdf"
+   ],
+   "kind": "rule",
+   "stages": [
+    {
+     "who": "Delhi",
+     "min": 56100,
+     "max": 177500,
+     "per": "month"
+    }
+   ],
+   "kindLabel": "Government or official pay rules"
+  },
+  "government_service:vocational-instructor-government-iti": {
+   "asOf": "2025",
+   "quote": "As dated official examples, Ladakh’s ITI-sector cadre document lists Vocational Instructor at Level 4 (₹25,500–81,100) and Level 6E (₹35,900–113,500) under its specified conditions, whereas an NSTI Ludhiana staff profile identifies a Vocational Instructor at Pay Level 6.",
+   "sources": [
+    "https://egazette.ladakh.gov.in/WriteReadData/2022/76.pdf",
+    "https://nstiludhiana.dgt.gov.in/en/node/12880"
+   ],
+   "kind": "rule",
+   "stages": [
+    {
+     "who": "Ladakh",
+     "min": 25500,
+     "max": 81100,
+     "per": "month"
+    }
+   ],
+   "kindLabel": "Government or official pay rules"
+  },
+  "government_service:workshop-superintendent-government-iti": {
+   "asOf": "2025",
+   "quote": "As a dated benchmark only, Ladakh’s 2025 Workshop Superintendent recruitment rules in the Polytechnic Sector specify Level 11 of the pay matrix, ₹67,700–₹2,08,700.",
+   "sources": [
+    "https://egazette.ladakh.gov.in/WriteReadData/2025/1531.pdf",
+    "https://www.education.gov.in/sites/upload_files/mhrd/files/RR-CIT.pdf"
+   ],
+   "kind": "rule",
+   "stages": [
+    {
+     "who": "Ladakh",
+     "min": 67700,
+     "max": 208700,
+     "per": "month"
+    }
+   ],
+   "kindLabel": "Government or official pay rules"
+  },
+  "job_role:architectural-assistant": {
+   "asOf": "2021",
+   "quote": "A dated public-sector reference—not a national salary benchmark—is Arunachal Pradesh’s 2021 recruitment rule for Architectural Assistant, which specified Pay Matrix Level 6, ₹35,400–₹1,12,400 per month, for that particular state-government post.",
+   "sources": [
+    "https://printing.arunachal.gov.in/uploads/686f84ca94be7.pdf"
+   ],
+   "kind": "rule",
+   "stages": [
+    {
+     "who": "Arunachal Pradesh govt post",
+     "min": 35400,
+     "max": 112400,
+     "per": "month"
+    }
+   ],
+   "kindLabel": "Government or official pay rules"
+  },
+  "job_role:assistant-professor": {
+   "asOf": "2024",
+   "quote": "As dated context, a December 2024 Government of NCT of Delhi SCERT notice described Assistant Professor posts at UGC Academic Level 10 in the ₹57,700–₹1,82,400 pay matrix; allowances and applicability vary by employer and rules.",
+   "sources": [
+    "https://scert.delhi.gov.in/scert/filling-posts-assistant-professor-academic-level-10-ugc-pay-matrix-rs57700-182400-0"
+   ],
+   "kind": "rule",
+   "stages": [
+    {
+     "who": "UGC Academic Level 10 (Delhi SCERT)",
+     "min": 57700,
+     "max": 182400,
+     "per": "month"
+    }
+   ],
+   "kindLabel": "Government or official pay rules"
+  },
+  "job_role:nursing-supervisor": {
+   "asOf": "2025",
+   "quote": "In the Ladakh Health and Medical (Subordinate) Service rules available in 2025, the combined Assistant Matron/Sister/Nursing Supervisor designation is listed at Level 6E, ₹35,900–₹113,200.",
+   "sources": [
+    "https://cdnbbsr.s3waas.gov.in/s395192c98732387165bf8e396c0f2dad2/uploads/2025/07/202507022081897930.pdf",
+    "https://tmc.gov.in/m_events/Events/JobDetail?jobId=14073"
+   ],
+   "kind": "rule",
+   "stages": [
+    {
+     "who": "Ladakh govt post",
+     "min": 35900,
+     "max": 113200,
+     "per": "month"
+    }
+   ],
+   "kindLabel": "Government or official pay rules"
+  },
+  "job_role:nursing-tutor": {
+   "asOf": "2024",
+   "quote": "Example only: Kerala Health Services appointment order dated September 7, 2024 — ₹50,200–₹105,300 for Nursing Tutor appointments covered by that order.",
+   "sources": [
+    "https://dhs.kerala.gov.in/wp-content/uploads/2023/01/document-49.pdf",
+    "https://www.neigrihms.gov.in/Institute%2C%20Circular%2C%20Order%2C%20Format/2023/Statement%20of%20RR%20of%20Nursing%20Teaching%20Faculty%20post%20of%20NEIGRIHMS.pdf"
+   ],
+   "kind": "rule",
+   "stages": [
+    {
+     "who": "Kerala govt",
+     "min": 50200,
+     "max": 105300,
+     "per": "month"
+    }
+   ],
+   "kindLabel": "Government or official pay rules"
+  },
+  "job_role:urban-planner": {
+   "asOf": "2024",
+   "quote": "As a dated public-sector example—not a national salary benchmark—Ladakh’s Assistant Town Planner Recruitment Rules, 2024 list Pay Level 8A, with a pay-matrix range of ₹50,700–₹160,600.",
+   "sources": [
+    "https://cdnbbsr.s3waas.gov.in/s395192c98732387165bf8e396c0f2dad2/uploads/2024/12/2024121934543190.pdf"
+   ],
+   "kind": "rule",
+   "stages": [
+    {
+     "who": "Ladakh Assistant Town Planner",
+     "min": 50700,
+     "max": 160600,
+     "per": "month"
+    }
+   ],
+   "kindLabel": "Government or official pay rules"
+  },
+  "job_role:central-sterile-supply-department-technician": {
+   "asOf": "2024",
+   "quote": "As dated examples only, a Tata Memorial Centre 2022 walk-in advertisement listed ₹16,042 per month for Technician (CSSD), while a Tata Memorial Centre deployment advertisement dated March 2024 listed ₹18,500 per month for one Technician (CSSD) post.",
+   "sources": [
+    "https://tmc.gov.in/m_events/Events/JobDetail?jobId=9379",
+    "https://tmc.gov.in/m_events/Events/JobDetail?jobId=28568"
+   ],
+   "kind": "notice",
+   "stages": [
+    {
+     "who": "Tata Memorial Centre",
+     "min": 18500,
+     "max": 18500,
+     "per": "month"
+    }
+   ],
+   "kindLabel": "Public employer's notice"
+  },
+  "job_role:clinical-research-associate": {
+   "asOf": "2026",
+   "quote": "As a concrete, dated reference, Tata Memorial Centre advertised six-month CRA posts on 11 April 2026 with starting remuneration of ₹48,000 per month for one specified qualification-and-experience band and ₹52,000 per month for other specified bands.",
+   "sources": [
+    "https://tmc.gov.in/postmaster/ViewFile?FileId=%2FOmZ4NMPnuw5fpvq4TOx5g%3D%3D"
+   ],
+   "kind": "notice",
+   "stages": [
+    {
+     "who": "Tata Memorial Centre",
+     "min": 48000,
+     "max": 52000,
+     "per": "month"
+    }
+   ],
+   "kindLabel": "Public employer's notice"
+  },
+  "job_role:community-development-officer": {
+   "asOf": "2026",
+   "quote": "In a 2026 Himachal Pradesh project expression of interest, the listed maximum emoluments for Community Development Officer and Assistant Community Development Officer were ₹45,599; the same notice described the engagement as requirement-based and not a claim to regular employment.",
+   "sources": [
+    "https://nrtc.hp.gov.in/Pdf/Expression%20of%20Interest.pdf",
+    "https://mmrda.maharashtra.gov.in/mr/recruitment-data"
+   ],
+   "kind": "notice",
+   "stages": [
+    {
+     "who": "Himachal Pradesh project, up to",
+     "min": 45599,
+     "max": 45599,
+     "per": "month"
+    }
+   ],
+   "kindLabel": "Public employer's notice"
+  },
+  "job_role:database-administrator": {
+   "asOf": "2023",
+   "quote": "For example, a December 2023 Ministry of Defence consultancy notice for a Young Professional (Database Administrator) specified ₹60,000 per month consolidated remuneration; it should not be treated as a current private-sector salary benchmark or as applicable to all DBA roles.",
+   "sources": [
+    "https://www.ncs.gov.in/Documents/Hiring-of-2-YPs-in-DESW_21_12_2023.pdf"
+   ],
+   "kind": "notice",
+   "stages": [
+    {
+     "who": "Ministry of Defence young professional",
+     "min": 60000,
+     "max": 60000,
+     "per": "month"
+    }
+   ],
+   "kindLabel": "Public employer's notice"
+  },
+  "job_role:dental-surgeon": {
+   "asOf": "2024",
+   "quote": "As a dated public-sector example only, a Kerala National Rural Health Mission Dental Surgeon notice published for 2024 listed ₹41,000 per month and required BDS from a recognised university plus Kerala State Dental Council registration.",
+   "sources": [
+    "https://arogyakeralam.gov.in/wp-content/uploads/2020/04/Dental-Surgeon-notification.pdf",
+    "https://bibvewadihospital.esic.gov.in/attachments/recruitmentfile/Walk_in_interviews_are_scheduled_to_be_conducted_at_ESIC_Hospital_Bibvewadi_Pune_ndash_37_on_12th_and_13th_January_2026_for_the_contractual_engagement_English_1767614792.pdf"
+   ],
+   "kind": "notice",
+   "stages": [
+    {
+     "who": "Kerala NRHM",
+     "min": 41000,
+     "max": 41000,
+     "per": "month"
+    }
+   ],
+   "kindLabel": "Public employer's notice"
+  },
+  "job_role:diploma-engineer-trainee-psu": {
+   "asOf": "2024",
+   "quote": "In POWERGRID’s 2024 notification, Diploma Trainees were placed at S0 with ₹24,000 basic pay plus IDA, HRA and 12% perks during the one-year training period; after successful completion, the notice stated Junior Engineer Grade IV/S1 basic pay of ₹25,000 in the ₹25,000–117,500 IDA scale and approximate annual CTC of ₹11.9 lakh.",
+   "sources": [
+    "https://www.powergrid.in/sites/default/files/inline-files/Detail_Advt_CC_10_2024_Non_Exe_Trainee.pdf",
+    "https://www.mahadiscom.in/wp-content/uploads/2024/01/MSEDCL-ADVT.-NO.-01_2024_INTERNAL-NOTIFICATION_GET_DET.pdf",
+    "https://career.hurl.net.in/others/GET%20DET%20advt%20for%20website.pdf"
+   ],
+   "kind": "notice",
+   "stages": [
+    {
+     "who": "POWERGRID, basic pay in training",
+     "min": 24000,
+     "max": 24000,
+     "per": "month"
+    },
+    {
+     "who": "as Junior Engineer (CTC)",
+     "min": 1190000,
+     "max": 1190000,
+     "per": "year"
+    }
+   ],
+   "kindLabel": "Public employer's notice"
+  },
+  "job_role:junior-engineer-psu": {
+   "asOf": "2024",
+   "quote": "As a dated example, POWERGRID's October 2024 notification placed trainees at ₹24,000 basic pay in the S0 IDA scale during training and stated absorption as Junior Engineer Grade IV at the S1 scale of ₹25,000–₹117,500, with an approximate annual CTC of ₹11.9 lakh.",
+   "sources": [
+    "https://www.powergrid.in/sites/default/files/inline-files/Detail_Advt_CC_10_2024_Non_Exe_Trainee.pdf"
+   ],
+   "kind": "notice",
+   "stages": [
+    {
+     "who": "POWERGRID Junior Engineer (CTC)",
+     "min": 1190000,
+     "max": 1190000,
+     "per": "year"
+    }
+   ],
+   "kindLabel": "Public employer's notice"
+  },
+  "job_role:epidemiologist": {
+   "asOf": "2026",
+   "quote": "As a dated example, NCDC’s 30 June 2026 IDSP terms of reference advertised five contractual Consultant Epidemiologist posts with a ₹90,000–₹150,000 monthly consolidated-remuneration band: ₹90,000 for up to three years of post-qualification experience, ₹120,000 for more than three to under 10 years, and ₹150,000 for 10 or more years.",
+   "sources": [
+    "https://ncdc.mohfw.gov.in/uploads/vacancies/1780980195_Approved%20TOR_IDSP.pdf",
+    "https://ncdc.mohfw.gov.in/includes/Work_With_Us/Vacancies.php"
+   ],
+   "kind": "notice",
+   "stages": [
+    {
+     "who": "NCDC, up to 3 years' experience",
+     "min": 90000,
+     "max": 90000,
+     "per": "month"
+    },
+    {
+     "who": "3–10 years",
+     "min": 120000,
+     "max": 120000,
+     "per": "month"
+    },
+    {
+     "who": "10+ years",
+     "min": 150000,
+     "max": 150000,
+     "per": "month"
+    }
+   ],
+   "kindLabel": "Public employer's notice"
+  },
+  "job_role:motion-graphics-designer": {
+   "asOf": "2025",
+   "quote": "As a dated public-sector example, C-DIT’s 2025 notification advertised one Motion Graphics Designer role on a one-year, performance-extendable contract at ₹34,190–₹37,800 per month consolidated, with stated qualification and experience criteria.",
+   "sources": [
+    "https://careers.cdit.org/Notification-29.pdf"
+   ],
+   "kind": "notice",
+   "stages": [
+    {
+     "who": "C-DIT contract",
+     "min": 34190,
+     "max": 37800,
+     "per": "month"
+    }
+   ],
+   "kindLabel": "Public employer's notice"
+  },
+  "job_role:policy-analyst": {
+   "asOf": "2026",
+   "quote": "For a dated official reference point rather than a market-wide estimate, NITI Aayog’s Work for Viksit Bharat portal listed monthly remuneration of ₹70,000 for Young Professionals, ₹80,000–₹1,45,000 for Consultant Grade 1, ₹1,45,000–₹2,65,000 for Consultant Grade 2, and ₹2,65,000–₹3,30,000 for Senior Consultants when reviewed on July 18, 2026.",
+   "sources": [
+    "https://workforbharat.niti.gov.in/",
+    "https://niti.gov.in/work-niti/opportunities"
+   ],
+   "kind": "notice",
+   "stages": [
+    {
+     "who": "NITI Aayog Young Professional",
+     "min": 70000,
+     "max": 70000,
+     "per": "month"
+    },
+    {
+     "who": "Consultant Grade 1",
+     "min": 80000,
+     "max": 145000,
+     "per": "month"
+    },
+    {
+     "who": "Consultant Grade 2",
+     "min": 145000,
+     "max": 265000,
+     "per": "month"
+    }
+   ],
+   "kindLabel": "Public employer's notice"
+  },
+  "job_role:public-health-programme-manager": {
+   "asOf": "2025",
+   "quote": "As dated illustrations rather than a current market rate, a National AYUSH Mission Kerala notification dated 10 October 2025 advertised a contractual District Programme Manager at ₹40,000 consolidated per month, while a December 2025 AIIMS Delhi project advertisement listed ₹75,270 consolidated for a Senior Research Scientist eligible with MPH/public-health/health-administration qualifications and ₹128,050 for a Junior Public Health Specialist–Field with relevant public-health experience.",
+   "sources": [
+    "https://www.aiims.edu/images/pdf/recruitment/advertisement/CDER-19-12-25.pdf"
+   ],
+   "kind": "notice",
+   "stages": [
+    {
+     "who": "National AYUSH Mission, Kerala",
+     "min": 40000,
+     "max": 40000,
+     "per": "month"
+    }
+   ],
+   "kindLabel": "Public employer's notice"
+  },
+  "job_role:research-assistant": {
+   "asOf": "2026",
+   "quote": "As dated illustrations, an ICMR Headquarters project advertisement listed ₹31,000 per month consolidated for a Project Assistant (Research Assistant)/Project Technical Support III role, while an IIT Kanpur ICSSR project advertisement dated May 2026 listed ₹37,000 per month consolidated.",
+   "sources": [
+    "https://www.icmr.gov.in/icmrobject/uploads/Recruitment/1727153372_vte_ra_advt_sept2024.pdf",
+    "https://www.iitk.ac.in/dord/project/doms-ra-19-05-26.html",
+    "https://www.jnu.ac.in/node/159897598"
+   ],
+   "kind": "notice",
+   "stages": [
+    {
+     "who": "ICMR / ICSSR projects",
+     "min": 31000,
+     "max": 37000,
+     "per": "month"
+    }
+   ],
+   "kindLabel": "Public employer's notice"
+  },
+  "job_role:senior-lab-technician": {
+   "asOf": "2025",
+   "quote": "As dated examples, an ICMR project advertisement listed a consolidated ₹25,000 per month for a temporary Project Senior Lab Technician post, while ISRO’s career information states that Lab Technician-A can progress to Senior Lab Technician-B at Pay Level 10, with a displayed pay-matrix range of ₹56,100–₹1,77,500.",
+   "sources": [
+    "https://www.icmr.gov.in/icmrobject/custom_data/1708623427_advertisement_eqa_preempt.pdf",
+    "https://www.isro.gov.in/CareerOpportunities.html",
+    "https://www.ncs.gov.in/content-repository/Pages/ViewNcoDetails.aspx?ContentTypeId=0x01003FEA8C7117A78D4F93DC52780D878B2F0015F91119E23A874E9006B0F068F1089C&ID=6942&List=8db9be14-2b47-4f30-97fb-5de315d871c0"
+   ],
+   "kind": "notice",
+   "stages": [
+    {
+     "who": "ICMR project post",
+     "min": 25000,
+     "max": 25000,
+     "per": "month"
+    }
+   ],
+   "kindLabel": "Public employer's notice"
+  },
+  "job_role:systems-analyst": {
+   "asOf": "2020",
+   "quote": "The available official figure should be treated only as dated context: NIELIT’s advertisement numbered 07/223/2020 listed a consolidated ₹26,625–₹33,600 per month for one Systems Analyst engagement that required at least three years of specified IT experience.",
+   "sources": [
+    "https://www.nielit.gov.in/sites/default/files/PDF/Recruitment/Eligibilty%20Criteria.pdf",
+    "https://www.nielit.gov.in/sites/default/files/PDF/Recruitment/EligibilityDetails_2016-02-05.pdf"
+   ],
+   "kind": "notice",
+   "stages": [
+    {
+     "who": "NIELIT engagement",
+     "min": 26625,
+     "max": 33600,
+     "per": "month"
+    }
+   ],
+   "kindLabel": "Public employer's notice"
+  },
+  "job_role:agniveer-indian-air-force": {
+   "asOf": "2026",
+   "quote": "For Intake 02/2027, the customised monthly package was listed as ₹30,000, ₹33,000, ₹36,500 and ₹40,000 for years 1 through 4 respectively.",
+   "sources": [
+    "https://ganjam.odisha.gov.in/sites/default/files/2026-06/Advt%20Agniveervayu%2002%20of%2027.pdf",
+    "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1834227&lang=1&reg=1"
+   ],
+   "kind": "rule",
+   "stages": [
+    {
+     "who": "Year 1",
+     "min": 30000,
+     "max": 30000,
+     "per": "month"
+    },
+    {
+     "who": "Year 4",
+     "min": 40000,
+     "max": 40000,
+     "per": "month"
+    }
+   ],
+   "kindLabel": "Government or official pay rules"
+  },
+  "job_role:agniveer-indian-army": {
+   "asOf": "2022",
+   "quote": "In its June 2022 scheme announcement, the Government published a customised monthly package of ₹30,000, ₹33,000, ₹36,500 and ₹40,000 for years 1–4 respectively.",
+   "sources": [
+    "https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=1833765&lang=2&reg=48"
+   ],
+   "kind": "rule",
+   "stages": [
+    {
+     "who": "Year 1",
+     "min": 30000,
+     "max": 30000,
+     "per": "month"
+    },
+    {
+     "who": "Year 4",
+     "min": 40000,
+     "max": 40000,
+     "per": "month"
+    }
+   ],
+   "kindLabel": "Government or official pay rules"
+  },
+  "job_role:agniveer-indian-navy": {
+   "asOf": "2025",
+   "quote": "In the Indian Navy’s 2025 SSR advertisement, the customised monthly package was listed as ₹30,000 in year 1, ₹33,000 in year 2, ₹36,500 in year 3 and ₹40,000 in year 4.",
+   "sources": [
+    "https://www.joinindiannavy.gov.in/files/Advt_Agniveer_SSR_English.pdf",
+    "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1834227&lang=1&reg=1"
+   ],
+   "kind": "rule",
+   "stages": [
+    {
+     "who": "Year 1",
+     "min": 30000,
+     "max": 30000,
+     "per": "month"
+    },
+    {
+     "who": "Year 4",
+     "min": 40000,
+     "max": 40000,
+     "per": "month"
+    }
+   ],
+   "kindLabel": "Government or official pay rules"
+  },
+  "job_role:cost-accounting-trainee": {
+   "asOf": "2025",
+   "quote": "In that published structure, a trainee pursuing CMA Intermediate at a corporate or organisation other than a practising cost accountant/firm is listed at ₹20,000, ₹18,000 or ₹15,000 per month in the first year for Category X, Y or Z cities/towns respectively; the listed second-year figures are ₹22,000, ₹20,000 and ₹18,000, and third-year figures are ₹25,000, ₹22,000 and ₹20,000.",
+   "sources": [
+    "https://icmai.in/Home/NewPracticalTrainingScheme2020"
+   ],
+   "kind": "rule",
+   "stages": [
+    {
+     "who": "Year 1 stipend, by city",
+     "min": 15000,
+     "max": 20000,
+     "per": "month"
+    },
+    {
+     "who": "Year 2",
+     "min": 18000,
+     "max": 22000,
+     "per": "month"
+    }
+   ],
+   "kindLabel": "Government or official pay rules"
+  },
+  "job_role:graduate-engineer-trainee": {
+   "asOf": "2025",
+   "quote": "As a dated employer example only, STEAG’s 2025 GET FAQ stated ₹25,000 per month during a six-month on-job-training phase, free shared bachelor accommodation at the plant site during that phase, and a ₹5 lakh annual package after successful completion.",
+   "sources": [
+    "https://www.steag.in/fileadmin/user_upload/FM_SES/India/GET_2025/FAQs.pdf",
+    "https://www.dohe-education.gov.in/offerings/schemes_and_services/details/scheme-of-apprenticeship-training-ADO2ITNtQWa"
+   ],
+   "kind": "employer",
+   "stages": [
+    {
+     "who": "STEAG, during training",
+     "min": 25000,
+     "max": 25000,
+     "per": "month"
+    },
+    {
+     "who": "after training",
+     "min": 500000,
+     "max": 500000,
+     "per": "year"
+    }
+   ],
+   "kindLabel": "Employer's published terms"
+  },
+  "job_role:accountant": {
+   "asOf": "2023",
+   "quote": "As a dated reference only, the NCS Accountant card—last updated on 16 October 2023—lists ₹8,000–₹12,000 per month for new entrants and ₹20,000–₹35,000 per month for experienced candidates, and explicitly says these figures are indicative and subject to change.",
+   "sources": [
+    "https://www.ncs.gov.in/content-repository/Pages/ViewNcoDetails.aspx?ContentTypeId=0x01003FEA8C7117A78D4F93DC52780D878B2F0015F91119E23A874E9006B0F068F1089C&ID=4271&List=8db9be14-2b47-4f30-97fb-5de315d871c0"
+   ],
+   "kind": "ncs",
+   "stages": [
+    {
+     "who": "New entrants",
+     "min": 8000,
+     "max": 12000,
+     "per": "month"
+    },
+    {
+     "who": "Experienced",
+     "min": 20000,
+     "max": 35000,
+     "per": "month"
+    }
+   ],
+   "kindLabel": "National Career Service (govt) indicative range"
+  },
+  "job_role:accounts-executive": {
+   "asOf": "2023",
+   "quote": "NCS’s Accounts Executive (Accounts Payable & Receivables) profile, last updated on October 16, 2023, gave an indicative range of ₹15,000–₹29,000 per month for candidates with zero to four years of experience.",
+   "sources": [
+    "https://www.ncs.gov.in/content-repository/Pages/ViewNcoDetails.aspx?ContentTypeId=0x01003FEA8C7117A78D4F93DC52780D878B2F0015F91119E23A874E9006B0F068F1089C&ID=3645&List=8db9be14-2b47-4f30-97fb-5de315d871c0"
+   ],
+   "kind": "ncs",
+   "stages": [
+    {
+     "who": "0–4 years' experience",
+     "min": 15000,
+     "max": 29000,
+     "per": "month"
+    }
+   ],
+   "kindLabel": "National Career Service (govt) indicative range"
+  },
+  "job_role:after-sales-service-manager": {
+   "asOf": "2023",
+   "quote": "As a dated reference point only, the NCS page for the closely related Area Service Manager role—last updated September 18, 2023—reported indicative monthly earnings of ₹15,000–₹25,000 for new entrants and ₹25,000–₹60,000 for experienced candidates, while explicitly stating that the figures are subject to change.",
+   "sources": [
+    "https://www.ncs.gov.in/content-repository/Pages/ViewNcoDetails.aspx?ContentTypeId=0x01003FEA8C7117A78D4F93DC52780D878B2F0015F91119E23A874E9006B0F068F1089C&ID=3464&List=8db9be14-2b47-4f30-97fb-5de315d871c0"
+   ],
+   "kind": "ncs",
+   "stages": [
+    {
+     "who": "New entrants (Area Service Manager)",
+     "min": 15000,
+     "max": 25000,
+     "per": "month"
+    },
+    {
+     "who": "Experienced",
+     "min": 25000,
+     "max": 60000,
+     "per": "month"
+    }
+   ],
+   "kindLabel": "National Career Service (govt) indicative range"
+  },
+  "job_role:service-operations-manager": {
+   "asOf": "2023",
+   "quote": "As a dated public reference only, NCS’s automotive Area Service Manager profile was last updated on September 18, 2023 and listed indicative earnings of ₹15,000–₹25,000 per month for new entrants and ₹25,000–₹60,000 per month for experienced candidates.",
+   "sources": [
+    "https://www.ncs.gov.in/content-repository/Pages/ViewNcoDetails.aspx?ContentTypeId=0x01003FEA8C7117A78D4F93DC52780D878B2F0015F91119E23A874E9006B0F068F1089C&ID=3464&List=8db9be14-2b47-4f30-97fb-5de315d871c0"
+   ],
+   "kind": "ncs",
+   "stages": [
+    {
+     "who": "New entrants (Area Service Manager)",
+     "min": 15000,
+     "max": 25000,
+     "per": "month"
+    },
+    {
+     "who": "Experienced",
+     "min": 25000,
+     "max": 60000,
+     "per": "month"
+    }
+   ],
+   "kindLabel": "National Career Service (govt) indicative range"
+  },
+  "job_role:biomedical-engineer": {
+   "asOf": "2023",
+   "quote": "The National Career Service career page—last updated December 30, 2023—gave an indicative range of ₹25,000–₹29,000 per month for candidates with three to five years’ experience, while expressly stating that the figure was subject to change.",
+   "sources": [
+    "https://www.ncs.gov.in/content-repository/Pages/ViewNcoDetails.aspx?ContentTypeId=0x01003FEA8C7117A78D4F93DC52780D878B2F0015F91119E23A874E9006B0F068F1089C&ID=4730&List=8db9be14-2b47-4f30-97fb-5de315d871c0"
+   ],
+   "kind": "ncs",
+   "stages": [
+    {
+     "who": "3–5 years' experience",
+     "min": 25000,
+     "max": 29000,
+     "per": "month"
+    }
+   ],
+   "kindLabel": "National Career Service (govt) indicative range"
+  },
+  "job_role:fashion-designer": {
+   "asOf": "2023",
+   "quote": "As a dated, entry-adjacent benchmark only, the National Career Service page for Assistant Fashion Designer—last updated on 16 November 2023—listed ₹20,000 to ₹27,000 per month for candidates with experience and expressly described the figures as indicative and subject to change.",
+   "sources": [
+    "https://www.ncs.gov.in/content-repository/Pages/ViewNcoDetails.aspx?ContentTypeId=0x01003FEA8C7117A78D4F93DC52780D878B2F0015F91119E23A874E9006B0F068F1089C&ID=6808&List=8db9be14-2b47-4f30-97fb-5de315d871c0"
+   ],
+   "kind": "ncs",
+   "stages": [
+    {
+     "who": "Experienced (Assistant Fashion Designer)",
+     "min": 20000,
+     "max": 27000,
+     "per": "month"
+    }
+   ],
+   "kindLabel": "National Career Service (govt) indicative range"
+  },
+  "job_role:front-office-executive": {
+   "asOf": "2023",
+   "quote": "As dated reference context only, NCS’s comparable Receptionist (Hotel) page—last updated December 29, 2023—listed ₹12,500–₹25,000 per month for candidates with experience and explicitly described the figures as indicative and subject to change.",
+   "sources": [
+    "https://www.ncs.gov.in/content-repository/Pages/ViewNcoDetails.aspx?ContentTypeId=0x01003FEA8C7117A78D4F93DC52780D878B2F0015F91119E23A874E9006B0F068F1089CC&ID=4944&List=8db9be14-2b47-4f30-97fb-5de315d871c0"
+   ],
+   "kind": "ncs",
+   "stages": [
+    {
+     "who": "Experienced (Receptionist, Hotel)",
+     "min": 12500,
+     "max": 25000,
+     "per": "month"
+    }
+   ],
+   "kindLabel": "National Career Service (govt) indicative range"
+  },
+  "job_role:lab-technician": {
+   "asOf": "2023",
+   "quote": "NCS’s life-sciences profile, last updated December 30, 2023, gave an indicative range of ₹16,000–₹18,000 per month for experienced candidates; it explicitly states that the figure is indicative and subject to change, so it should not be treated as a current market benchmark.",
+   "sources": [
+    "https://www.ncs.gov.in/content-repository/Pages/ViewNcoDetails.aspx?ContentTypeId=0x01003FEA8C7117A78D4F93DC52780D878B2F0015F91119E23A874E9006B0F068F1089C&ID=6942&List=8db9be14-2b47-4f30-97fb-5de315d871c0",
+    "https://rrbsecunderabad.gov.in/wp-content/uploads/2024/08/Detailed-CEN-04-2024-Paramedical-English.pdf"
+   ],
+   "kind": "ncs",
+   "stages": [
+    {
+     "who": "Experienced",
+     "min": 16000,
+     "max": 18000,
+     "per": "month"
+    }
+   ],
+   "kindLabel": "National Career Service (govt) indicative range"
+  },
+  "job_role:maintenance-supervisor": {
+   "asOf": "2024",
+   "quote": "NCS’s plant-and-machinery supervisor profile, last updated April 28, 2024, reported an indicative experienced-candidate range of ₹50,000–₹65,000 per month and explicitly stated that figures are subject to change.",
+   "sources": [
+    "https://www.ncs.gov.in/content-repository/Pages/ViewNcoDetails.aspx?ContentTypeId=0x01003FEA8C7117A78D4F93DC52780D878B2F0015F91119E23A874E9006B0F068F1089C&ID=6488&List=8db9be14-2b47-4f30-97fb-5de315d871c0"
+   ],
+   "kind": "ncs",
+   "stages": [
+    {
+     "who": "Experienced",
+     "min": 50000,
+     "max": 65000,
+     "per": "month"
+    }
+   ],
+   "kindLabel": "National Career Service (govt) indicative range"
+  },
+  "job_role:marketing-manager": {
+   "asOf": "2023",
+   "quote": "As a dated and sector-specific reference only, NCS’s automotive Marketing Manager – Line of Business profile, last updated 18 September 2023, listed indicative earnings for experienced candidates of ₹25,000–₹41,000 per month and explicitly stated that the figures were subject to change.",
+   "sources": [
+    "https://www.ncs.gov.in/content-repository/Pages/ViewNcoDetails.aspx?ContentTypeId=0x01003FEA8C7117A78D4F93DC52780D878B2F0015F91119E23A874E9006B0F068F1089C&ID=3545&List=8db9be14-2b47-4f30-97fb-5de315d871c0",
+    "https://www.indiacode.nic.in/handle/123456789/22075?locale=en"
+   ],
+   "kind": "ncs",
+   "stages": [
+    {
+     "who": "Experienced (automotive)",
+     "min": 25000,
+     "max": 41000,
+     "per": "month"
+    }
+   ],
+   "kindLabel": "National Career Service (govt) indicative range"
+  },
+  "job_role:quality-control-analyst": {
+   "asOf": "2023",
+   "quote": "As a dated reference rather than a current market guarantee, the NCS Quality Control Chemist profile, last updated on December 30, 2023, listed indicative new-entrant earnings of ₹8,500 to ₹55,000 per month and explicitly stated that the figures were subject to change.",
+   "sources": [
+    "https://www.ncs.gov.in/content-repository/Pages/ViewNcoDetails.aspx?ContentTypeId=0x01003FEA8C7117A78D4F93DC52780D878B2F0015F91119E23A874E9006B0F068F1089C&ID=4961&List=8db9be14-2b47-4f30-97fb-5de315d871c0"
+   ],
+   "kind": "ncs",
+   "stages": [
+    {
+     "who": "New entrants (QC Chemist)",
+     "min": 8500,
+     "max": 55000,
+     "per": "month"
+    }
+   ],
+   "kindLabel": "National Career Service (govt) indicative range"
+  },
+  "job_role:senior-industrial-technician": {
+   "asOf": "2023",
+   "quote": "As dated reference context only, the NCS page for the related Maintenance Technician–Mechanical Level 3 profile—last updated September 18, 2023—reported ₹12,000–₹18,000 per month for candidates with experience and explicitly labelled the figures indicative and subject to change.",
+   "sources": [
+    "https://www.ncs.gov.in/content-repository/Pages/ViewNcoDetails.aspx?ContentTypeId=0x01003FEA8C7117A78D4F93DC52780D878B2F0015F91119E23A874E9006B0F068F1089C&ID=3533&List=8db9be14-2b47-4f30-97fb-5de315d871c0"
+   ],
+   "kind": "ncs",
+   "stages": [
+    {
+     "who": "Experienced (Maintenance Technician)",
+     "min": 12000,
+     "max": 18000,
+     "per": "month"
+    }
+   ],
+   "kindLabel": "National Career Service (govt) indicative range"
+  },
+  "job_role:travel-consultant": {
+   "asOf": "2023",
+   "quote": "As a dated reference only, the National Career Service page for the related Travel Agent occupation—last updated December 29, 2023—listed ₹14,500 to ₹32,000 per month for candidates with experience and expressly described the figures as indicative and subject to change.",
+   "sources": [
+    "https://www.ncs.gov.in/content-repository/Pages/ViewNcoDetails.aspx?ContentTypeId=0x01003FEA8C7117A78D4F93DC52780D878B2F0015F91119E23A874E9006B0F068F1089C&ID=4949&List=8db9be14-2b47-4f30-97fb-5de315d871c0"
+   ],
+   "kind": "ncs",
+   "stages": [
+    {
+     "who": "Experienced (Travel Agent)",
+     "min": 14500,
+     "max": 32000,
+     "per": "month"
+    }
+   ],
+   "kindLabel": "National Career Service (govt) indicative range"
+  },
+  "job_role:business-development-executive": {
+   "asOf": "2026",
+   "quote": "As a dated market indicator rather than a guaranteed offer, Indeed India’s guide updated on June 16, 2026 reported an average of ₹20,306 per month for Business Development Executives, while cautioning that pay varies by skills, experience, qualifications and location.",
+   "sources": [
+    "https://in.indeed.com/career-advice/finding-a-job/what-does-business-development-executive-do",
+    "https://in.linkedin.com/jobs/view/business-development-executive-bde-at-pragati-one-4406860904",
+    "https://in.linkedin.com/jobs/view/business-development-executive-bde-at-appxcess-technologies-4436030449"
+   ],
+   "kind": "aggregator",
+   "stages": [
+    {
+     "who": "Indeed India average",
+     "min": 20306,
+     "max": 20306,
+     "per": "month"
+    }
+   ],
+   "kindLabel": "Salary-survey website estimate"
+  },
+  "job_role:data-scientist": {
+   "asOf": "2025",
+   "quote": "For dated market context only, AmbitionBox reported on 2025-08-07 that Data Scientist salaries in India ranged from ₹4 lakh to ₹29.5 lakh annually for people with approximately one to eight years of experience, based on its submitted-salary dataset.",
+   "sources": [
+    "https://www.ambitionbox.com/profile/data-scientist-salary/company-industry",
+    "https://www.ncs.gov.in/content-repository/Pages/ViewNcoDetails.aspx?ContentTypeId=0x01003FEA8C7117A78D4F93DC52780D878B2F0015F91119E23A874E9006B0F068F1089C&ID=3958&List=8db9be14-2b47-4f30-97fb-5de315d871c0"
+   ],
+   "kind": "aggregator",
+   "stages": [
+    {
+     "who": "AmbitionBox, 1–8 years' experience",
+     "min": 400000,
+     "max": 2950000,
+     "per": "year"
+    }
+   ],
+   "kindLabel": "Salary-survey website estimate"
+  },
+  "job_role:digital-marketing-manager": {
+   "asOf": "2026",
+   "quote": "As a dated signal only, Indeed reported an India average base salary of ₹3,20,210 per year from 340 reported salaries, updated February 21, 2026.",
+   "sources": [
+    "https://in.indeed.com/career/digital-marketing-manager/salaries",
+    "https://www.ncs.gov.in/content-repository/Pages/ViewNcoDetails.aspx?ContentTypeId=0x01003FEA8C7117A78D4F93DC52780D878B2F0015F91119E23A874E9006B0F068F1089C&ID=3506&List=8db9be14-2b47-4f30-97fb-5de315d871c0"
+   ],
+   "kind": "aggregator",
+   "stages": [
+    {
+     "who": "Indeed India average base pay",
+     "min": 320210,
+     "max": 320210,
+     "per": "year"
+    }
+   ],
+   "kindLabel": "Salary-survey website estimate"
+  },
+  "job_role:engineering-manager": {
+   "asOf": "2025",
+   "quote": "Indicative only: Indeed India reported an approximate average Engineering Manager salary of ₹11,36,653 per year in an article updated December 2, 2025.",
+   "sources": [
+    "https://in.indeed.com/career-advice/finding-a-job/what-does-engineering-manager-do"
+   ],
+   "kind": "aggregator",
+   "stages": [
+    {
+     "who": "Indeed India average",
+     "min": 1136653,
+     "max": 1136653,
+     "per": "year"
+    }
+   ],
+   "kindLabel": "Salary-survey website estimate"
+  },
+  "job_role:senior-engineer": {
+   "asOf": "2026",
+   "quote": "As a point-in-time indicator, Indeed listed an India average base salary of ₹11,69,014 per year on July 2, 2026, using 643 reported salaries.",
+   "sources": [
+    "https://in.indeed.com/career/senior-engineer/salaries?campaignid=serp-more&fromjk=4c9144c3f6ffe268",
+    "https://in.indeed.com/career/senior-engineer/salaries/Bengaluru--Karnataka?campaignid=serp-more&fromjk=472a60be81d0cae6"
+   ],
+   "kind": "aggregator",
+   "stages": [
+    {
+     "who": "Indeed India average base pay",
+     "min": 1169014,
+     "max": 1169014,
+     "per": "year"
+    }
+   ],
+   "kindLabel": "Salary-survey website estimate"
+  },
+  "job_role:seo-content-writer": {
+   "asOf": "2026",
+   "quote": "As a dated market indicator only, Jooble listed an India average of ₹3,54,505 per year for an SEO Content Writer on 20 May 2026.",
+   "sources": [
+    "https://in.jooble.org/salary/seo-content-writer/India",
+    "https://internshala.com/jobs/search-engine-optimization-seo-jobs/"
+   ],
+   "kind": "aggregator",
+   "stages": [
+    {
+     "who": "Jooble India average",
+     "min": 354505,
+     "max": 354505,
+     "per": "year"
+    }
+   ],
+   "kindLabel": "Salary-survey website estimate"
+  },
+  "job_role:seo-manager": {
+   "asOf": "2025",
+   "quote": "As a dated reference point rather than a current benchmark, AmbitionBox’s India page reported an annual SEO Manager salary range of ₹3 lakh to ₹18 lakh from 3,600 reported salaries, last updated on 30 July 2025.",
+   "sources": [
+    "https://www.ambitionbox.com/profile/seo-manager-salary",
+    "https://in.linkedin.com/jobs/view/seo-manager-at-unacademy-4436806308",
+    "https://www.glassdoor.co.in/job-listing/seo-manager-fibe-JV_IC2856202_KO0%2C11_KE12%2C16.htm?jl=1009584641037"
+   ],
+   "kind": "aggregator",
+   "stages": [
+    {
+     "who": "AmbitionBox range",
+     "min": 300000,
+     "max": 1800000,
+     "per": "year"
+    }
+   ],
+   "kindLabel": "Salary-survey website estimate"
+  },
+  "government_service:probationary-officer-public-sector-bank": {
+   "asOf": "2026",
+   "quote": "Basic: ₹ 48480-2000/7-62480-2340/2-67160-2680/7-85920 (IBPS CRP PO/MT-XVI notification).",
+   "sources": [
+    "https://www.ibps.in/wp-content/uploads/Detailed-Notification_CRP-PO-XVI_Final_V1_30.06.2026.pdf"
+   ],
+   "kind": "rule",
+   "kindLabel": "Government or official pay rules",
+   "stages": [
+    {
+     "who": "Basic pay, IBPS PO/MT scale",
+     "min": 48480,
+     "max": 85920,
+     "per": "month"
+    }
+   ],
+   "growth": {
+    "text": "The scale rises in fixed yearly steps from ₹48,480 to ₹85,920 basic pay; banks add allowances under their own rules.",
+    "sources": [
+     "https://www.ibps.in/wp-content/uploads/Detailed-Notification_CRP-PO-XVI_Final_V1_30.06.2026.pdf"
+    ]
+   }
+  }
+ },
+ "odds": {
+  "exam:upsc-cse": {
+   "kind": "selection",
+   "year": "2024",
+   "applied": 992599,
+   "selected": 1009,
+   "text": "9,92,599 people applied for the 2024 Civil Services Examination; 1,009 were recommended for appointment.",
+   "sources": [
+    "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2123422&reg=48&lang=2"
+   ]
+  },
+  "exam:rrb-ntpc": {
+   "kind": "selection",
+   "year": "2019 notice",
+   "applied": 12630885,
+   "selected": 35208,
+   "text": "1,26,30,885 online applications were received for 35,208 NTPC vacancies (CEN 01/2019).",
+   "sources": [
+    "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1632290&reg=48&lang=2"
+   ]
+  },
+  "exam:rrb-alp": {
+   "kind": "selection",
+   "year": "2018 notice",
+   "applied": 4745176,
+   "selected": 56378,
+   "text": "47,45,176 online applications were received for 64,371 Assistant Loco Pilot and Technician vacancies; 56,378 candidates were empanelled.",
+   "sources": [
+    "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1632290&reg=48&lang=2"
+   ]
+  },
+  "exam:rrb-group-d-level-1-exam": {
+   "kind": "selection",
+   "year": "2018 notice",
+   "applied": 19000000,
+   "selected": 62907,
+   "text": "About 1.90 crore applications were received for 62,907 Level-1 (Group D) vacancies (CEN 02/2018).",
+   "sources": [
+    "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1530058&reg=3&lang=2"
+   ]
+  },
+  "exam:ca-intermediate": {
+   "kind": "pass",
+   "year": "May 2026",
+   "appeared": 33304,
+   "passed": 2820,
+   "text": "In May 2026, 2,820 of 33,304 candidates who sat both groups of CA Intermediate passed (8.47%).",
+   "sources": [
+    "https://www.icai.org/post/prc-ca-result-may2026-intermediate"
+   ]
+  },
+  "exam:ca-final": {
+   "kind": "pass",
+   "year": "May 2026",
+   "appeared": 23776,
+   "passed": 3345,
+   "text": "In May 2026, 3,345 of 23,776 candidates who sat both groups of CA Final passed (14.07%).",
+   "sources": [
+    "https://www.icai.org/post/prc-caresult-may2026"
+   ]
+  },
+  "exam:ctet": {
+   "kind": "pass",
+   "year": "Feb 2026",
+   "appeared": 2324625,
+   "passed": 597061,
+   "text": "In February 2026, 5,97,061 of 23,24,625 candidates who appeared qualified CTET (25.68%).",
+   "sources": [
+    "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/03/202603311458590440.pdf"
+   ]
+  },
+  "exam:cfa-program": {
+   "kind": "pass",
+   "year": "Aug 2026",
+   "appeared": 28145,
+   "passed": null,
+   "rate": 0.43,
+   "text": "43% of the 28,145 candidates who sat CFA Level I in August 2026 passed.",
+   "sources": [
+    "https://www.cfainstitute.org/sites/default/files/docs/programs/cfa-program/candidate-resources/cfa-exam-results-pass-rate-infographic.pdf"
+   ]
+  },
+  "exam:gate": {
+   "kind": "pass",
+   "year": "2026, CS paper",
+   "appeared": 211020,
+   "passed": 40661,
+   "text": "In GATE 2026, 40,661 of 2,11,020 candidates who sat the Computer Science paper qualified (about 19%). Other papers differ.",
+   "sources": [
+    "https://gate2026.iitg.ac.in/doc/report/GATE%202026%20Statistical%20And%20Performance%20Report%20Web%20Version.pdf"
+   ]
+  }
+ }
+}
