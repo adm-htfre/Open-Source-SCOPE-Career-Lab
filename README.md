@@ -2,7 +2,9 @@
 
 An interactive career mind map for SCOPE school (Yerala Project Society, Jalihal) careers guidance, in the same paper-and-highlighter style as the [Geography Lab](https://github.com/adm-htfre/Open-Source-SCOPE-Geography-Lab) and [Science Lab](https://github.com/adm-htfre/Open-Source-SCOPE-Science-Lab). It starts at Class 10 and shows every route from there to courses, exams, jobs and government services in India. It is built on [Career Tree](https://github.com/mhardik003/career-tree) by mhardik003 (MIT licence), with a mind-map view and pay data added for SCOPE.
 
-Unlike the other labs this is a Next.js web app, not a single file, so it needs Node.js to run (see **Run it** below). Open `/mindmap` once it is running.
+Give it a shot here - https://adm-htfre.github.io/Open-Source-SCOPE-Career-Lab/mindmap/
+
+Unlike the other labs this is a Next.js web app, not a single file. The GitHub Pages site above is a static build made by `.github/workflows/pages.yml` on every push; it has everything except the "Suggest a path" / "Edit guide" forms and the share images, which need a server. To run the full app yourself, see **Run it** below.
 
 ## What it does
 
