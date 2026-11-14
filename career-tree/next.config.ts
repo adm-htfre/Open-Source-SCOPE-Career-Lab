@@ -1,6 +1,20 @@
 import type { NextConfig } from "next";
 
+// GitHub Pages build (see scripts/pages-export.sh): a static export served from
+// /<repo-name>. Unset for normal `npm run dev` / `npm run build`.
+const pagesBasePath = process.env.PAGES_BASE_PATH;
+const pagesExport: NextConfig =
+  pagesBasePath === undefined
+    ? {}
+    : {
+        output: "export",
+        basePath: pagesBasePath,
+        trailingSlash: true,
+        images: { unoptimized: true },
+      };
+
 const nextConfig: NextConfig = {
+  ...pagesExport,
   experimental: {
     // Cap static-generation workers (default: one per core). Each worker loads the
     // full graph dataset, so an uncapped build peaks at multiple GB of aggregate RSS.
